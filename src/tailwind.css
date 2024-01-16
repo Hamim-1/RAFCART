@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+   
+  
+  .custom-scrollbar::-webkit-scrollbar {
+    display:none ;
+  }
+  .right{
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 16% 50%);
+  }
+  .left{
+    clip-path: polygon(0% 0%, 75% 0%, 84% 50%, 75% 100%, 0% 100%);
+  }
+  .animation:hover .to{
+    animation: transi 2s alternate;
+  }
+ 
+  @media (max-width:768px) {
+    .left{
+      clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 16% 50%);
+    }
+  }
+
+  
+}
