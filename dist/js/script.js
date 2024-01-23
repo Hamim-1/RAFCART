@@ -21,7 +21,7 @@ const shopPagesNumSerioulId = ['grid-product-pages-number', 'list-product-pages-
 const allPageId = ['home-page', 'cart-section', 'shop-page', 'login-page', 'register-page', 'forgot-password-page', 'contact-page', 'about-us-page', 'track-order-page', 'faq-page', 'not-found-page', 'checkout-page', 'payment-page', 'order-complete-page', 'terms-conditions-page', 'my-account-page', 'privacy-policy-page'];
 const responsiveSideBarId = ['menu-sideBar','categorise-sideBar','cart-sideBar'];
 
-const searchItemsName = ['phone','headphone','watch','shoe','laptop'];
+const searchItemsName = ['phone','headphone','watch','shoes','laptop'];
 const searchItemsObj = [phones,headphones,watches,shoes,laptops];
 const listAndGirdViewAllPagesNumber = document.getElementById('list-&-gird-view-all-pages-number');
 
