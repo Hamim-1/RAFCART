@@ -649,7 +649,7 @@ const resMenuBgClick = document.getElementById('res-section-bg');
 function showSideBar(id) {
     const sideBar = document.getElementById(id);
     if (id === 'searchBar') {
-        sideBar.classList.remove('-top-full');
+        sideBar.classList.remove('-top-[9999px]');
         sideBar.classList.add('top-0');
         opendSideBar = id;
     } else {
@@ -665,7 +665,7 @@ function showSideBar(id) {
 function hideSideBar(id) {
     const sideBar = document.getElementById(id);
     if (id === 'searchBar') {
-        sideBar.classList.add('-top-full');
+        sideBar.classList.add('-top-[9999px]');
         sideBar.classList.remove('top-0');
     } else {
         sideBar.classList.add('-left-full');
