@@ -21,15 +21,21 @@ const shopPagesNumSerioulId = ['grid-product-pages-number', 'list-product-pages-
 const allPageId = ['home-page', 'cart-section', 'shop-page', 'login-page', 'register-page', 'forgot-password-page', 'contact-page', 'about-us-page', 'track-order-page', 'faq-page', 'not-found-page', 'checkout-page', 'payment-page', 'order-complete-page', 'terms-conditions-page', 'my-account-page', 'privacy-policy-page'];
 const responsiveSideBarId = ['menu-sideBar','categorise-sideBar','cart-sideBar'];
 
+const searchItemsName = ['phone','headphone','watch','shoe','laptop'];
+const searchItemsObj = [phones,headphones,watches,shoes,laptops];
+const listAndGirdViewAllPagesNumber = document.getElementById('list-&-gird-view-all-pages-number');
 
 const listProductAllPagesId =
     ['list-page-num-one', 'list-page-num-two', 'list-page-num-three'];
 const gridProductAllPagesId =
     ['grid-page-num-one', 'grid-page-num-two', 'grid-page-num-three'];
 
+const searchInputOne = document.getElementById('search-input-one');
+
+let searchItemFound = false;
 if (localStorage.getItem('savedCartItems')) {
     var savedCartItems = [];
-    allSavedCartData = localStorage.getItem('savedCartItems');
+    const allSavedCartData = localStorage.getItem('savedCartItems');
     JSON.parse(allSavedCartData).forEach(itemName => {
         savedCartItems.push(itemName);
     });
@@ -39,12 +45,56 @@ if (localStorage.getItem('savedCartItems')) {
 
 if (localStorage.getItem('savedWishlistItems')) {
     var savedWishlistItems = [];
-    allSavedCartData = localStorage.getItem('savedWishlistItems');
-    JSON.parse(allSavedCartData).forEach(itemName => {
+    const allSavedWishlistData = localStorage.getItem('savedWishlistItems');
+    JSON.parse(allSavedWishlistData).forEach(itemName => {
         savedWishlistItems.push(itemName);
     });
 } else {
     var savedWishlistItems = [];
+}
+
+if (localStorage.getItem('savedSearchItems')) {
+    var savedSearchItems = [];
+    const allSavedSearchData = localStorage.getItem('savedSearchItems');
+    JSON.parse(allSavedSearchData).forEach(itemName => {
+        savedSearchItems.push(itemName);
+    });
+} else {
+    var savedSearchItems = [];
+}
+
+
+function animation() {
+    window.scrollTo(0, 0);
+    closeAllDropDownSection();
+    animationSection.classList.remove('hidden');
+
+    setTimeout(() => {
+        animationSection.classList.add('opacity-80');
+    }, 100);
+    setTimeout(() => {
+        animationSection.classList.remove('opacity-80');
+        animationSection.classList.add('opacity-60');
+    }, 200);
+    setTimeout(() => {
+        animationSection.classList.remove('opacity-60');
+        animationSection.classList.add('opacity-40');
+    }, 300);
+    setTimeout(() => {
+        animationSection.classList.remove('opacity-40');
+        animationSection.classList.add('opacity-20');
+    }, 400);
+    setTimeout(() => {
+        animationSection.classList.remove('opacity-20');
+        animationSection.classList.add('opacity-0');
+    }, 500);
+    setTimeout(() => {
+        animationSection.classList.remove('opacity-0');
+        animationSection.classList.add('opacity-100');
+        animationSection.classList.add('hidden');
+    }, 600);
+
+
 }
 
 document.getElementById('date').value = '2000-10-24';
@@ -54,7 +104,7 @@ function addToCart(name, img, price) {
     const div = document.createElement('div');
     div.className = "border border-gray-300 flex flex-col md:flex-row p-10 lg:p-6 md:items-center rounded-md h-auto md:min-h-36 space-y-5 md:space-y-0";
     div.innerHTML = `
-    <div class="w-full md:w-1/5">
+    <div class="w-full md:w-1/5 flex justify-center items-center">
         <img src="${img.src}" class="w-auto mx-auto md:mx-0 h-20">
     </div>
 
@@ -167,7 +217,7 @@ function listProductCart(parentSection, productDetails) {
     </div>
 
     <div
-        class="w-full md:w-2/3 h-full flex flex-col space-y-1 justify-center pr-14 px-5 md:px-0">
+        class="w-full md:w-2/3 h-full flex flex-col space-y-1 justify-center px-5 md:px-0">
         <p class="text-2xl font-medium">${productDetails.name}</p>
 
         <div class="flex items-center space-x-3 group-hover:hidden py-1">
@@ -188,14 +238,14 @@ function listProductCart(parentSection, productDetails) {
             Phasellus blandit massa enim.</p>
 
 
-        <div class=" flex space-x-5 pt-5">
+        <div class="flex space-x-5 pt-5">
             <div
-                class="flex justify-center items-center space-x-1 text-white hover:text-primary w-32 font-semibold text-base rounded-md bg-primary border border-primary hover:bg-transparent text-center p-1.5 duration-300 cursor-pointer" onclick="addToCartAndWishlistBtnHandle(this)">
+                class="flex justify-center items-center space-x-1 text-white hover:text-primary w-32 font-semibold text-base rounded-md bg-primary border border-primary hover:bg-transparent text-center py-2 duration-300 cursor-pointer" onclick="addToCartAndWishlistBtnHandle(this)">
                 <i class="fa-solid fa-cart-shopping text-xs mt-1"></i>
                 <button>Add To Cart</button>
             </div>
             <div
-                class="flex justify-center space-x-1 items-center w-32 font-semibold text-base rounded-md bg-transparent text-primary border border-primary hover:bg-primary hover:text-white text-center p-1.5 duration-300 cursor-pointer" onclick="addToCartAndWishlistBtnHandle(this)">
+                class="flex justify-center space-x-1 items-center w-32 font-semibold text-base rounded-md bg-transparent text-primary border border-primary hover:bg-primary hover:text-white text-center py-2 duration-300 cursor-pointer" onclick="addToCartAndWishlistBtnHandle(this)">
                 <i class="fa-regular fa-heart text-xs mt-1"></i>
                 <button>Wishlist</button>
             </div>
@@ -492,12 +542,12 @@ for (let i = 0; i < 4; i++) {
 
 }
 
-function lodedShopPageGridProduct1(gridProductPageNum, pageNumDiv) {
+function changePageOfGridProduct(gridProductPageNum, pageNumDiv) {
+    animation();
     shopPageGridProductSection.innerHTML = '';
-    for (let i = 0; i < 9; i++) {
-        const productDetails = gridProductPageNum[i];
-        productCart(shopPageGridProductSection, productDetails)
-    }
+    gridProductPageNum.forEach(value => {
+        productCart(shopPageGridProductSection, value)
+    })
 
     gridProductAllPagesId.forEach(page => {
         const pageParent = document.getElementById(page);
@@ -511,19 +561,16 @@ function lodedShopPageGridProduct1(gridProductPageNum, pageNumDiv) {
     })
 }
 
-lodedShopPageGridProduct1(shopPageGridProduct1, 'grid-page-num-one')
-// for (let i = 0; i < 9; i++) {
-//     const productDetails = shopPageGridProduct[i];
-//     productCart(shopPageGridProductSection, productDetails);
+changePageOfGridProduct(shopPageGridProduct1, 'grid-page-num-one')
 
-// }
-
-function lodedShopPageListProduct1(listProductPageNum, pageNumDiv) {
+// changePageOfLo
+function changePageOfListProduct(listProductPageNum, pageNumDiv) {
+    animation();
     shopPageListProductSection.innerHTML = '';
-    for (let i = 0; i < 3; i++) {
-        const productDetails = listProductPageNum[i];
-        listProductCart(shopPageListProductSection, productDetails)
-    }
+    listProductPageNum.forEach(value => {
+        listProductCart(shopPageListProductSection, value)
+    })
+    
 
     listProductAllPagesId.forEach(page => {
         const pageParent = document.getElementById(page);
@@ -536,8 +583,8 @@ function lodedShopPageListProduct1(listProductPageNum, pageNumDiv) {
         }
     })
 }
-
-lodedShopPageListProduct1(shopPageListProduct1, 'list-page-num-one')
+// changePageOfListProduct
+changePageOfListProduct(shopPageListProduct1, 'list-page-num-one')
 
 for (let i = 0; i < 8; i++) {
     const productDetails = recomendedProduct[i];
@@ -545,11 +592,58 @@ for (let i = 0; i < 8; i++) {
     productCart(recomendedProductSection, productDetails);
 }
 
+function searchProduct(searchProductName){
+    for (let i = 0; i < searchItemsName.length; i++) {
+        if(searchItemsName[i] === searchProductName){
+            listAndGirdViewAllPagesNumber.style.display = 'none';
+            changePage('shop-page');            
+            hideSideBar('searchBar');
+            changePageOfGridProduct(searchItemsObj[i], 'grid-page-num-one'); 
+            changePageOfListProduct(searchItemsObj[i], 'list-page-num-one'); 
+        }
+    }
+}
 
+function openShopPage(producLike){
+    if(producLike === 'default-product'){
+        listAndGirdViewAllPagesNumber.style.display = 'block';
+        changePageOfGridProduct(shopPageGridProduct1, 'grid-page-num-one');
+        changePageOfListProduct(shopPageListProduct1, 'list-page-num-one');
+        changePage('shop-page');
+    }
 
-const searchInputForm = document.getElementById('search-input-form');
+    else if(window.innerWidth < 992){
+        const searchInput = searchInputTwo.value.toLowerCase();
+        if(searchItemsName.includes(searchInput)){   
+            searchProduct(searchInput); 
+        } else if(searchInputTwo.value !== ''){
+            changePage('not-found-page');
+            hideSideBar('searchBar')
+        }
+        if(searchInput != '' && !savedSearchItems.includes(searchInput)){
+            
+            searchProductNameAddInHistory(searchInputTwo);
+        }
+        searchInputTwo.value = '';
+    } else{
+        const searchInput = searchInputOne.value.toLowerCase();
+        if(searchItemsName.includes(searchInput)){
+            searchProduct(searchInput); 
+        } else if(searchInputOne.value !== ''){
+            changePage('not-found-page');
+            hideSideBar('searchBar')
+        }
+        if(searchInput != '' && !savedSearchItems.includes(searchInput)){
+            
+            searchProductNameAddInHistory(searchInputOne);
+        }
+        searchInputOne.value = '';
+    }
+}
+
+const searchInputForms = document.querySelectorAll('.search-input-form');
 const searchList = document.getElementById('search-list');
-const searchInput = document.getElementById('search-input');
+const searchInputTwo = document.getElementById('search-input-two');
 let opendSideBar;
 const resMenuBgClick = document.getElementById('res-section-bg');
 function showSideBar(id) {
@@ -586,25 +680,40 @@ function savedSearchData() {
     localStorage.setItem('searchData', searchList.innerHTML);
 }
 
-searchInputForm.addEventListener('submit', searchItem);
-
 function searchItem(event) {
     event.preventDefault();
-    if (searchInput.value != '') {
-        const div = document.createElement('div');
-        div.className = "flex justify-between items-center mt-5 px-5 hover:bg-black/30 rounded-md";
-        div.innerHTML = `<span>${searchInput.value}</span> <i class="fa-solid fa-xmark cursor-pointer"></i>`;
-        searchList.appendChild(div);
-        savedSearchData();
-        searchInput.value = '';
-    }
+    openShopPage();
 }
+
+function searchProductNameAddInHistory(input){
+        hideSideBar('searchBar');
+        const div = document.createElement('div');
+        div.className = "flex justify-between items-center mt-5 px-5 hover:bg-black/30 rounded-md py-1";
+        div.innerHTML = `<span>${input.value}</span> <i class="fa-solid fa-xmark cursor-pointer"></i>`;
+        searchList.appendChild(div);
+        
+        savedSearchItems.push(input.value.toLowerCase());
+        localStorage.setItem('savedSearchItems',JSON.stringify(savedSearchItems));
+        savedSearchData();
+    
+}
+searchInputForms.forEach(value => {
+    value.addEventListener('submit', searchItem);
+})
+// searchInputForms.addEventListener('submit', searchItem);
+
 
 searchList.onclick = removeSearchItem;
 
+
 function removeSearchItem(e) {
     if (e.target.tagName === 'I') {
-        searchList.removeChild(e.target.parentNode)
+        const searchItemParent = e.target.parentNode;
+        searchList.removeChild(searchItemParent)
+        const removeItemName = searchItemParent.childNodes[0].innerText.toLowerCase();
+        const removeItemNameIndex = savedSearchItems.indexOf(removeItemName);
+        savedSearchItems.splice(removeItemNameIndex,1);
+        localStorage.setItem('savedSearchItems',JSON.stringify(savedSearchItems));
     }
     savedSearchData();
 }
@@ -613,21 +722,23 @@ function setSearchList() {
     const searchData = localStorage.getItem('searchData');
     searchList.innerHTML = searchData;
 }
+
+function searchInputCustomize(searchInput){
+    searchInput.addEventListener('keyup',() => {
+        if(searchInput.value.length === 1 && searchInput.value === ' '){
+            searchInput.value = '';
+        }
+    })
+}
+
+searchInputCustomize(searchInputOne);
+searchInputCustomize(searchInputTwo);
+
 window.onload = setSearchList;
 resMenuBgClick.addEventListener('click', () => {
     hideSideBar(opendSideBar);
 })
 
-// window.addEventListener('resize', () => {
-//     const menuside = document.getElementById('menu-sideBar');
-//     const categoriseuside = document.getElementById('categorise-sideBar');
-//     if (window.innerWidth === '992px') {
-//         menuside.classList.add('-left-full');
-//         menuside.classList.remove('left-0');
-//         categoriseuside.classList.add('-left-full');
-//         categoriseuside.classList.remove('left-0');
-//     }
-// })
 
 cratSection.addEventListener('click', (e) => {
     const parent = e.target.parentNode.parentNode.parentNode;
@@ -668,6 +779,7 @@ function priceRangeChange(priceRange) {
 
 // this function handle the how to look product view . when we click the flex or gird button product view change like this.
 function changeProductView(showSectionId, hideSectionId, icon1, icon2, pagesSerioulId) {
+    animation();
     const showSection = document.getElementById(showSectionId);
     const hideSection = document.getElementById(hideSectionId);
     const gridIcon = document.getElementById(icon1);
@@ -861,6 +973,7 @@ for (let i = 0; i < 2; i++) {
 }
 
 const twoAccountPageButtonSection = document.querySelectorAll('.account-page-button-section');
+
 twoAccountPageButtonSection.forEach(value => {
     value.innerHTML = `
     <div class="flex border-b items-start border-gray-300 pb-5">
@@ -942,15 +1055,22 @@ twoAccountPageButtonSection.forEach(value => {
     <div
         class="flex space-x-3 text-lg font-semibold cursor-pointer hover:text-primary duration-300 items-center">
         <i class="fa-solid fa-power-off cursor-pointer w-5"></i>
-        <p class="btn-12" onclick="changePage('login-section')">Log Out</p>
+        <p class="btn-12" onclick="changePage('login-page')">Log Out</p>
     </div>
 </div>
     `
 })
 
 
-function accountPageResMenuBtnHandle() {
-    if (twoAccountPageButtonSection[0].className.indexOf('top-32') == -1) {
+function accountPageResMenuBtnHandle(num) {
+    if(num != undefined){
+        twoAccountPageButtonSection[0].classList.add('hidden');
+        twoAccountPageButtonSection[0].classList.add('opacity-0');
+        twoAccountPageButtonSection[0].classList.remove('opacity-100');
+        twoAccountPageButtonSection[0].classList.add('-top-[1000px]');
+        twoAccountPageButtonSection[0].classList.remove('top-32');
+    }
+    else if (twoAccountPageButtonSection[0].className.indexOf('top-32') == -1) {
         twoAccountPageButtonSection[0].classList.remove('hidden');
         setTimeout(() => {
             twoAccountPageButtonSection[0].classList.add('opacity-100');
@@ -1076,7 +1196,7 @@ function changeAccountPageSection(id, button, pageNameText) {
 
             btn.classList.add('text-primary');
         })
-        accountPageResMenuBtnHandle()
+        accountPageResMenuBtnHandle(6)
     }
     accountPageAllSectionId.forEach(value => {
         const section = document.getElementById(value);
@@ -1189,42 +1309,7 @@ function selectPaymentMethod(clickedbutton, paymentSectionId) {
     })
 }
 
-const animationSection = document.getElementById('animationSection');
 
-
-
-
-function animation() {
-    closeAllDropDownSection();
-    animationSection.classList.remove('hidden');
-
-    setTimeout(() => {
-        animationSection.classList.add('opacity-80');
-    }, 100);
-    setTimeout(() => {
-        animationSection.classList.remove('opacity-80');
-        animationSection.classList.add('opacity-60');
-    }, 200);
-    setTimeout(() => {
-        animationSection.classList.remove('opacity-60');
-        animationSection.classList.add('opacity-40');
-    }, 300);
-    setTimeout(() => {
-        animationSection.classList.remove('opacity-40');
-        animationSection.classList.add('opacity-20');
-    }, 400);
-    setTimeout(() => {
-        animationSection.classList.remove('opacity-20');
-        animationSection.classList.add('opacity-0');
-    }, 500);
-    setTimeout(() => {
-        animationSection.classList.remove('opacity-0');
-        animationSection.classList.add('opacity-100');
-        animationSection.classList.add('hidden');
-    }, 600);
-
-
-}
 
 function changePage(pageId) {
     responsiveSideBarId.forEach(id => {
@@ -1233,7 +1318,7 @@ function changePage(pageId) {
             hideSideBar(id)
         }
     })
-    window.scrollTo(0, 0);
+    
     animation();
     allPageId.forEach(id => {
         const page = document.getElementById(id);
@@ -1289,7 +1374,8 @@ function closeAllDropDownSection(sectionId){
 }
 
 
-function extendBtnSection(clickdeSection,extendedSectionId,height){
+function extendBtnSection(clickdeSection,extendedSectionId,height,opendSectionName){
+    closeExtendBtnSection(opendSectionName.extendBtnSection,opendSectionName.height,opendSectionName.arrow)
     const arrow = clickdeSection.querySelector('i');
     const extendBtnSection = document.getElementById(extendedSectionId);
     if(!arrow.className.includes('rotate-180')){
@@ -1306,3 +1392,23 @@ function extendBtnSection(clickdeSection,extendedSectionId,height){
         extendBtnSection.classList.add('opacity-0');
     }
 }
+function closeExtendBtnSection(extendedSectionId,height,arrowId){
+    const arrow = document.getElementById(arrowId);
+    const extendBtnSection = document.getElementById(extendedSectionId);
+    if(arrow.className.includes('rotate-180')){
+        arrow.classList.remove('rotate-180');
+        extendBtnSection.classList.remove('opacity-100');
+        extendBtnSection.classList.remove(height);
+        extendBtnSection.classList.add('h-0');
+        extendBtnSection.classList.add('opacity-0');
+    }
+}
+
+// function abc(event){
+//     event.preventDefault();
+//     console.log(6);
+// }
+// const sic = document.getElementById('s-b');
+// console.log(sic);
+// sic.addEventListener('submit',abc);
+

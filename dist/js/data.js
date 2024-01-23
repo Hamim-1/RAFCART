@@ -170,7 +170,7 @@ const shopPageGridProduct1 = [
         price: '$40.00',
         Dprice: '20.00',
         review: 60,
-        img: 'img/shoes/shoes-5.png'
+        img: 'img/shoes/shoes-4.png'
     },
     topRankingProduct[3][2],
     {
@@ -268,7 +268,6 @@ const shopPageListProduct3 = [
     topRankingProduct[0][0],
     topRankingProduct[1][0],
 ];
-
 
 
 
@@ -409,5 +408,141 @@ const myReviewProduct = [
         review: 'yes',
         buttonText: 'Edit Review'
     },
+]
+
+
+const extendBtnSection1 = {
+    height:'h-[197px]',
+    arrow:'extended-arr-1',
+    extendBtnSection:'my-account-extended-btn-section'
+}
+
+const extendBtnSection2 = {
+    height:'h-[395px]',
+    arrow:'extended-arr-2',
+    extendBtnSection:'other-pages-extended-btn-section'
+}
+
+
+const watches = [
+    {
+        name: 'Watch 1',
+        price: '$40.00',
+        Dprice: '20.00',
+        review: 60,
+        img: 'img/watch/watch-4.png'
+    },{
+        name: 'Watch 2',
+        price: '$40.00',
+        Dprice: '20.00',
+        review: 60,
+        img: 'img/watch/watch-5.png'
+    },{
+        name: 'Watch 3',
+        price: '$40.00',
+        Dprice: '20.00',
+        review: 60,
+        img: 'img/watch/watch-6.png'
+    },
+]
+
+const phones = [
+    {
+        name: 'Redmi Note 10S',
+        price: '$320.00',
+        Dprice: '300.00',
+        review: 10,
+        img: 'img/phone/phone-4.png'
+    },{
+        name: 'ROG Phone 5',
+        price: '$640.00',
+        Dprice: '520.00',
+        review: 25,
+        img: 'img/phone/phone-5.png'
+    },{
+        name: 'Samsung S22 Ultra',
+        price: '$2040.00',
+        Dprice: '1900.00',
+        review: 20,
+        img: 'img/phone/phone-6.png'
+    },
+]
+
+const headphones = [
+    {
+        name: 'Headphone 1',
+        price: '$40.00',
+        Dprice: '20.00',
+        review: 60,
+        img: 'img/headphone/headphone-7.png'
+    },{
+        name: 'Headphone 2',
+        price: '$40.00',
+        Dprice: '20.00',
+        review: 60,
+        img: 'img/headphone/headphone-5.png'
+    },{
+        name: 'Headphone 3',
+        price: '$40.00',
+        Dprice: '20.00',
+        review: 60,
+        img: 'img/headphone/headphone-6.png'
+    },
+]
+
+const shoes = [
+    {
+        name: 'Adidas Shoes',
+        price: '$40.00',
+        Dprice: '20.00',
+        review: 60,
+        img: 'img/shoes/shoes-2.png'
+    },{
+        name: 'Nike Air Jordan 1',
+        price: '$40.00',
+        Dprice: '20.00',
+        review: 60,
+        img: 'img/shoes/shoes-4.png'
+    },{
+        name: 'Nike Air Force 1 07',
+        price: '$40.00',
+        Dprice: '20.00',
+        review: 60,
+        img: 'img/shoes/shoes-6.png'
+    },{
+        name: 'Nike Dunk Low',
+        price: '$40.00',
+        Dprice: '20.00',
+        review: 60,
+        img: 'img/shoes/shoes-7.png'
+    }
+]
+
+const laptops = [
+    {
+        name: 'MacBook Air 13',
+        price: '$40.00',
+        Dprice: '20.00',
+        review: 60,
+        img: 'img/laptop/laptop-4.png'
+    },{
+        name: 'Windows laptop',
+        price: '$40.00',
+        Dprice: '20.00',
+        review: 60,
+        img: 'img/laptop/laptop-5.png'
+    },{
+        name: 'Gaming laptop',
+        price: '$40.00',
+        Dprice: '20.00',
+        review: 60,
+        img: 'img/laptop/laptop-6.png'
+    },{
+        name: 'ROG Laptop',
+        price: '$40.00',
+        Dprice: '20.00',
+        review: 60,
+        img: 'img/laptop/laptop-7.png'
+    }
 ]
 

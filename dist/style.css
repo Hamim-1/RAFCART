@@ -1102,6 +1102,10 @@ select {
   top: 56%;
 }
 
+.top-\[65px\] {
+  top: 65px;
+}
+
 .top-auto {
   top: auto;
 }
@@ -1540,6 +1544,14 @@ select {
 
 .max-h-\[800px\] {
   max-height: 800px;
+}
+
+.max-h-screen {
+  max-height: 100vh;
+}
+
+.max-h-\[80vh\] {
+  max-height: 80vh;
 }
 
 .w-1\/2 {
@@ -3366,10 +3378,6 @@ select {
 
 .pl-\[80px\] {
   padding-left: 80px;
-}
-
-.pr-14 {
-  padding-right: 3.5rem;
 }
 
 .pr-3 {
