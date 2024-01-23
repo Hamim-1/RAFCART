@@ -1014,8 +1014,8 @@ select {
   top: -1000px;
 }
 
-.-top-full {
-  top: -100%;
+.-top-\[9999px\] {
+  top: -9999px;
 }
 
 .bottom-0 {
@@ -1546,12 +1546,12 @@ select {
   max-height: 800px;
 }
 
-.max-h-screen {
-  max-height: 100vh;
-}
-
 .max-h-\[80vh\] {
   max-height: 80vh;
+}
+
+.max-h-screen {
+  max-height: 100vh;
 }
 
 .w-1\/2 {
