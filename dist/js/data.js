@@ -170,7 +170,7 @@ const shopPageGridProduct1 = [
         price: '$40.00',
         Dprice: '20.00',
         review: 60,
-        img: 'img/shoes/shoes-4.png'
+        img: 'img/shoes/shoes-5.png'
     },
     topRankingProduct[3][2],
     {
@@ -412,15 +412,15 @@ const myReviewProduct = [
 
 
 const extendBtnSection1 = {
-    height:'h-[197px]',
-    arrow:'extended-arr-1',
-    extendBtnSection:'my-account-extended-btn-section'
+    height: 'h-[197px]',
+    arrow: 'extended-arr-1',
+    extendBtnSection: 'my-account-extended-btn-section'
 }
 
 const extendBtnSection2 = {
-    height:'h-[395px]',
-    arrow:'extended-arr-2',
-    extendBtnSection:'other-pages-extended-btn-section'
+    height: 'h-[395px]',
+    arrow: 'extended-arr-2',
+    extendBtnSection: 'other-pages-extended-btn-section'
 }
 
 
@@ -431,13 +431,13 @@ const watches = [
         Dprice: '20.00',
         review: 60,
         img: 'img/watch/watch-4.png'
-    },{
+    }, {
         name: 'Watch 2',
         price: '$40.00',
         Dprice: '20.00',
         review: 60,
         img: 'img/watch/watch-5.png'
-    },{
+    }, {
         name: 'Watch 3',
         price: '$40.00',
         Dprice: '20.00',
@@ -453,13 +453,13 @@ const phones = [
         Dprice: '300.00',
         review: 10,
         img: 'img/phone/phone-4.png'
-    },{
+    }, {
         name: 'ROG Phone 5',
         price: '$640.00',
         Dprice: '520.00',
         review: 25,
         img: 'img/phone/phone-5.png'
-    },{
+    }, {
         name: 'Samsung S22 Ultra',
         price: '$2040.00',
         Dprice: '1900.00',
@@ -475,13 +475,13 @@ const headphones = [
         Dprice: '20.00',
         review: 60,
         img: 'img/headphone/headphone-7.png'
-    },{
+    }, {
         name: 'Headphone 2',
         price: '$40.00',
         Dprice: '20.00',
         review: 60,
         img: 'img/headphone/headphone-5.png'
-    },{
+    }, {
         name: 'Headphone 3',
         price: '$40.00',
         Dprice: '20.00',
@@ -497,19 +497,19 @@ const shoes = [
         Dprice: '20.00',
         review: 60,
         img: 'img/shoes/shoes-2.png'
-    },{
+    }, {
         name: 'Nike Air Jordan 1',
         price: '$40.00',
         Dprice: '20.00',
         review: 60,
         img: 'img/shoes/shoes-4.png'
-    },{
+    }, {
         name: 'Nike Air Force 1 07',
         price: '$40.00',
         Dprice: '20.00',
         review: 60,
         img: 'img/shoes/shoes-6.png'
-    },{
+    }, {
         name: 'Nike Dunk Low',
         price: '$40.00',
         Dprice: '20.00',
@@ -525,19 +525,19 @@ const laptops = [
         Dprice: '20.00',
         review: 60,
         img: 'img/laptop/laptop-4.png'
-    },{
+    }, {
         name: 'Windows laptop',
         price: '$40.00',
         Dprice: '20.00',
         review: 60,
         img: 'img/laptop/laptop-5.png'
-    },{
+    }, {
         name: 'Gaming laptop',
         price: '$40.00',
         Dprice: '20.00',
         review: 60,
         img: 'img/laptop/laptop-6.png'
-    },{
+    }, {
         name: 'ROG Laptop',
         price: '$40.00',
         Dprice: '20.00',
