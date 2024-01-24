@@ -23,8 +23,10 @@
                 <p class="text-3xl font-semibold"><span class="text-primary">RAF</span>CART</p>
 
                 <ul class="ml-14 flex space-x-6">
-                    <li class="cursor-pointer inline-block hover:text-primary transition" onclick="changePage('home-page')">Home</li>
-                    <li class="cursor-pointer inline-block hover:text-primary transition" onclick="openShopPage('default-product')">Shop</li>
+                    <li class="cursor-pointer inline-block hover:text-primary transition"
+                        onclick="changePage('home-page')">Home</li>
+                    <li class="cursor-pointer inline-block hover:text-primary transition"
+                        onclick="openShopPage('default-product')">Shop</li>
                     <li class="cursor-pointer inline-block hover:text-primary transition relative group">
                         Pages
                         <i class="fa fa-angle-down"></i>
@@ -34,62 +36,82 @@
                             <div class="flex space-y-3 flex-col">
                                 <p class="font-semibold text-base transition text-black">Others pages
                                 </p>
-                                <p class="text-base hover:text-primary transition text-black" onclick="changePage('about-us-page')"> About us</p>
-                                <p class="text-base hover:text-primary transition text-black" onclick="changePage('contact-page')">Contact us</p>
-                                <p class="text-base hover:text-primary transition text-black" onclick="changePage('track-order-page')">Track order</p>
-                                <p class="text-base hover:text-primary transition text-black" onclick="changePage('faq-page')"> FAQ</p>
+                                <p class="text-base hover:text-primary transition text-black"
+                                    onclick="changePage('about-us-page')"> About us</p>
+                                <p class="text-base hover:text-primary transition text-black"
+                                    onclick="changePage('contact-page')">Contact us</p>
+                                <p class="text-base hover:text-primary transition text-black"
+                                    onclick="changePage('track-order-page')">Track order</p>
+                                <p class="text-base hover:text-primary transition text-black"
+                                    onclick="changePage('faq-page')"> FAQ</p>
                             </div>
 
                             <div class="flex space-y-3 flex-col">
                                 <p class="font-semibold text-base transition text-black">Account pages
                                 </p>
-                                <p class="text-base hover:text-primary transition text-black" onclick="changePageAndSection('my-account-page','my-account-section','btn-1','Manage My Account')">My Account</p>
-                                <p class="text-base hover:text-primary transition text-black" onclick="changePage('login-page')">Login</p>
-                                <p class="text-base hover:text-primary transition text-black" onclick="changePage('register-page')">Register</p>
-                                <p class="text-base hover:text-primary transition text-black" onclick="changePage('forgot-password-page')"> Forgot password</p>
+                                <p class="text-base hover:text-primary transition text-black"
+                                    onclick="changePageAndSection('my-account-page','my-account-section','btn-1','Manage My Account')">
+                                    My Account</p>
+                                <p class="text-base hover:text-primary transition text-black"
+                                    onclick="changePage('login-page')">Login</p>
+                                <p class="text-base hover:text-primary transition text-black"
+                                    onclick="changePage('register-page')">Register</p>
+                                <p class="text-base hover:text-primary transition text-black"
+                                    onclick="changePage('forgot-password-page')"> Forgot password</p>
                             </div>
 
                             <div class="flex space-y-3 flex-col">
                                 <p class="font-semibold text-base transition text-black">Checkout page
                                 </p>
-                                <p class="text-base hover:text-primary transition text-black" onclick="changePage('checkout-page')">Checkout </p>
-                                <p class="text-base hover:text-primary transition text-black" onclick="changePage('payment-page')">Payment</p>
-                                <p class="text-base hover:text-primary transition text-black"  onclick="changePageAndSection('my-account-page','my-wishlist-section','btn-11','Wishlist')">Wishlist</p>
-                                <p class="text-base hover:text-primary transition text-black" onclick="changePage('order-complete-page')">Order complete</p>
+                                <p class="text-base hover:text-primary transition text-black"
+                                    onclick="changePage('checkout-page')">Checkout </p>
+                                <p class="text-base hover:text-primary transition text-black"
+                                    onclick="changePage('payment-page')">Payment</p>
+                                <p class="text-base hover:text-primary transition text-black"
+                                    onclick="changePageAndSection('my-account-page','my-wishlist-section','btn-11','Wishlist')">
+                                    Wishlist</p>
+                                <p class="text-base hover:text-primary transition text-black"
+                                    onclick="changePage('order-complete-page')">Order complete</p>
                             </div>
 
                         </div>
 
                     </li>
-                    <li class="cursor-pointer inline-block hover:text-primary transition" onclick="changePage('contact-page')">Contact</li>
+                    <li class="cursor-pointer inline-block hover:text-primary transition"
+                        onclick="changePage('contact-page')">Contact</li>
                 </ul>
             </div>
 
             <div class="hidden lg:block">
                 <ul class="flex">
-                    <li class="cursor-pointer inline-block mx-4"><span onclick="changePage('login-page')" class="hover:text-primary duration-200">Login</span> / <span onclick="changePage('register-page')" class="hover:text-primary duration-200">Register</span></li>
+                    <li class="cursor-pointer inline-block mx-4"><span onclick="changePage('login-page')"
+                            class="hover:text-primary duration-200">Login</span> / <span
+                            onclick="changePage('register-page')"
+                            class="hover:text-primary duration-200">Register</span></li>
 
-                    <li class="cursor-pointer inline-block mx-4 relative" onclick="openSortingList('language-list-section','language-arrow')"> <span id="lang-display">Language</span>
+                    <li class="cursor-pointer inline-block mx-4 relative"
+                        onclick="openSortingList('language-list-section','language-arrow')"> <span
+                            id="lang-display">Language</span>
                         <i id="language-arrow" class="fa fa-angle-down duration-200"></i>
 
                         <div class="absolute top-10 left-0 w-32 h-24 bg-white flex flex-col border border-gray-300 rounded-md z-20 scale-0 duration-300"
-                                    id="language-list-section">
+                            id="language-list-section">
 
 
-                                    <div class="hover:bg-slate-200 duration-150 py-2 cursor-pointer"
-                                    onclick="choseingSort('lang-1','lang-display',allLang)">
-                                        <p class="font-semibold mx-2 text-center" id="lang-1">Language</p>
-                                    </div>
-                                    <div class="hover:bg-slate-200 duration-150 py-2 cursor-pointer"
-                                            onclick="choseingSort('lang-2','lang-display',allLang)">
-                                        <p class=" mx-2 ml-7" id="lang-2">English
-                                        </p>
-                                    </div>
-                                    <div class="hover:bg-slate-200 duration-150 py-2 cursor-pointer"
-                                    onclick="choseingSort('lang-3','lang-display',allLang)">
-                                        <p class=" mx-2 ml-7" id="lang-3">Franch
-                                        </p>
-                                    </div>
+                            <div class="hover:bg-slate-200 duration-150 py-2 cursor-pointer"
+                                onclick="choseingSort('lang-1','lang-display',allLang)">
+                                <p class="font-semibold mx-2 text-center" id="lang-1">Language</p>
+                            </div>
+                            <div class="hover:bg-slate-200 duration-150 py-2 cursor-pointer"
+                                onclick="choseingSort('lang-2','lang-display',allLang)">
+                                <p class=" mx-2 ml-7" id="lang-2">English
+                                </p>
+                            </div>
+                            <div class="hover:bg-slate-200 duration-150 py-2 cursor-pointer"
+                                onclick="choseingSort('lang-3','lang-display',allLang)">
+                                <p class=" mx-2 ml-7" id="lang-3">Franch
+                                </p>
+                            </div>
 
 
                         </div>
@@ -97,26 +119,28 @@
                     </li>
 
                     </li>
-                    <li class="cursor-pointer inline-block mx-4 relative" onclick="openSortingList('currency-list-section','currency-arrow')"> <span id="currency-display" >Currency</span>
+                    <li class="cursor-pointer inline-block mx-4 relative"
+                        onclick="openSortingList('currency-list-section','currency-arrow')"> <span
+                            id="currency-display">Currency</span>
                         <i id="currency-arrow" class="fa fa-angle-down duration-200"></i>
                         <div class="absolute top-10 left-0 w-32 h-24 bg-white flex flex-col border border-gray-300 rounded-md z-20 scale-0 duration-300"
-                                    id="currency-list-section">
+                            id="currency-list-section">
 
 
-                                    <div class="hover:bg-slate-200 duration-150 py-2 cursor-pointer"
-                                    onclick="choseingSort('currency-1','currency-display',allCurrency)">
-                                        <p class="font-semibold mx-2 text-center" id="currency-1">Currency</p>
-                                    </div>
-                                    <div class="hover:bg-slate-200 duration-150 py-2 cursor-pointer"
-                                    onclick="choseingSort('currency-2','currency-display',allCurrency)">
-                                        <p class=" mx-2 ml-8" id="currency-2">Dollar
-                                        </p>
-                                    </div>
-                                    <div class="hover:bg-slate-200 duration-150 py-2 cursor-pointer"
-                                    onclick="choseingSort('currency-3','currency-display',allCurrency)">
-                                        <p class=" mx-2 ml-8" id="currency-3">Euro
-                                        </p>
-                                    </div>
+                            <div class="hover:bg-slate-200 duration-150 py-2 cursor-pointer"
+                                onclick="choseingSort('currency-1','currency-display',allCurrency)">
+                                <p class="font-semibold mx-2 text-center" id="currency-1">Currency</p>
+                            </div>
+                            <div class="hover:bg-slate-200 duration-150 py-2 cursor-pointer"
+                                onclick="choseingSort('currency-2','currency-display',allCurrency)">
+                                <p class=" mx-2 ml-8" id="currency-2">Dollar
+                                </p>
+                            </div>
+                            <div class="hover:bg-slate-200 duration-150 py-2 cursor-pointer"
+                                onclick="choseingSort('currency-3','currency-display',allCurrency)">
+                                <p class=" mx-2 ml-8" id="currency-3">Euro
+                                </p>
+                            </div>
 
 
                         </div>
@@ -129,7 +153,8 @@
                 <p class="text-3xl font-semibold text-white">RAF<span class="text-secondary">CART</span></p>
 
                 <div class="flex space-x-3 text-white h-full">
-                    <div class="flex flex-col justify-center items-center cursor-pointer h-full" onclick="changePageAndSection('my-account-page','my-wishlist-section','btn-11','Wishlist')">
+                    <div class="flex flex-col justify-center items-center cursor-pointer h-full"
+                        onclick="changePageAndSection('my-account-page','my-wishlist-section','btn-11','Wishlist')">
                         <i class="fa-regular fa-heart text-2xl relative">
                             <span
                                 class="absolute -top-2 -right-3 bg-secondary rounded-full text-[10px] px-1 py-1">4</span>
@@ -142,53 +167,61 @@
                         </i>
                         <p class="text-xs">Account</p>
 
-                        <div class="absolute top-20 right-0 bg-white hidden  group-hover:flex flex-col space-y-3 w-52 text-black rounded-b p-3 cursor-default shadow-md border border-gray-300 border-t-0 z-[21]">
-                        
+                        <div
+                            class="absolute top-20 right-0 bg-white hidden  group-hover:flex flex-col space-y-3 w-52 text-black rounded-b p-3 cursor-default shadow-md border border-gray-300 border-t-0 z-[21]">
+
                             <p class="text-sm font-semibold text-black/80">Welcome to RAFCART Shop</p>
-    
+
                             <div class="flex w-full space-x-3">
-                                <button class="bg-primary text-white hover:bg-transparent hover:text-primary px-1 font-medium duration-500 rounded py-1 border border-primary w-1/2 text-sm" onclick="changePage('register-page')">JOIN</button>
-        
-                                <button class="bg-white text-primary hover:bg-primary hover:text-white px-1 font-medium duration-500 rounded py-1 border border-primary w-1/2 text-sm" onclick="changePage('login-page')">SING IN</button>
+                                <button
+                                    class="bg-primary text-white hover:bg-transparent hover:text-primary px-1 font-medium duration-500 rounded py-1 border border-primary w-1/2 text-sm"
+                                    onclick="changePage('register-page')">JOIN</button>
+
+                                <button
+                                    class="bg-white text-primary hover:bg-primary hover:text-white px-1 font-medium duration-500 rounded py-1 border border-primary w-1/2 text-sm"
+                                    onclick="changePage('login-page')">SING IN</button>
                             </div>
-    
+
                             <div class="flex items-center cursor-pointer text-black/80"
-                            onclick="changePageAndSection('my-account-page','my-account-section','btn-1','Manage My Account')">
+                                onclick="changePageAndSection('my-account-page','my-account-section','btn-1','Manage My Account')">
                                 <div class="w-8">
                                     <i class="fa-regular fa-address-card mx-auto"></i>
                                 </div>
                                 <p>My Account</p>
                             </div>
-    
-                            <div class="flex items-center cursor-pointer text-black/80" onclick="changePageAndSection('my-account-page','my-order-history-section','btn-5','Order History')" >
+
+                            <div class="flex items-center cursor-pointer text-black/80"
+                                onclick="changePageAndSection('my-account-page','my-order-history-section','btn-5','Order History')">
                                 <div class="w-8">
                                     <i class="fa-solid fa-gift mx-auto"></i>
                                 </div>
                                 <p>My Order</p>
                             </div>
-    
+
                             <div class="flex items-center cursor-pointer text-black/80"
-                            onclick="changePageAndSection('my-account-page','my-wishlist-section','btn-11','Wishlist')">
+                                onclick="changePageAndSection('my-account-page','my-wishlist-section','btn-11','Wishlist')">
                                 <div class="w-8">
                                     <i class="fa-regular fa-heart mx-auto"></i>
                                 </div>
                                 <p>My Wishlist</p>
                             </div>
-    
-                            <div class="flex items-center cursor-pointer text-black/80" onclick="changePage('cart-section')">
+
+                            <div class="flex items-center cursor-pointer text-black/80"
+                                onclick="changePage('cart-section')">
                                 <div class="w-8">
                                     <i class="fa-solid fa-cart-shopping mx-auto"></i>
                                 </div>
                                 <p>My Cart</p>
                             </div>
-    
-                            <div class="flex items-center cursor-pointer text-black/80" onclick="changePage('login-page')">
+
+                            <div class="flex items-center cursor-pointer text-black/80"
+                                onclick="changePage('login-page')">
                                 <div class="w-8">
                                     <i class="fa-solid fa-power-off mx-auto"></i>
                                 </div>
                                 <p>Log out</p>
                             </div>
-    
+
                         </div>
                     </div>
                 </div>
@@ -205,75 +238,85 @@
             <div class="h-full w-1/6 xl:w-1/6 flex items-center bg-transparent relative" id="all-categories-btn-parent">
 
                 <div
-                class="flex bg-secondary text-white px-3 xl:px-6 py-3 items-center text-base space-x-3 rounded-md w-full cursor-pointer">
-                <i class="fa-solid fa-bars"></i>
-                <p>All categories</p>
+                    class="flex bg-secondary text-white px-3 xl:px-6 py-3 items-center text-base space-x-3 rounded-md w-full cursor-pointer">
+                    <i class="fa-solid fa-bars"></i>
+                    <p>All categories</p>
                 </div>
 
-                <div class="w-full absolute top-[65px] -left-0 shadow-md bg-white hidden rounded z-0" id="all-categories-name">
+                <div class="w-full absolute top-[65px] -left-0 shadow-md bg-white hidden rounded z-0"
+                    id="all-categories-name">
                     <ul class="w-full">
-                        <li class="cursor-pointer flex border-b border-gray-400 py-3 px-3 hover:bg-black/20 transition duration-300">
+                        <li
+                            class="cursor-pointer flex border-b border-gray-400 py-3 px-3 hover:bg-black/20 transition duration-300">
                             <i class="w-1/6 text-center mr-8 text-black/50 fa fa-shoe-prints"></i>
                             <span class="w-5/6 text-black">Shoes</span>
                         </li>
-                        <li class="cursor-pointer flex border-b border-gray-400 py-3 px-3 hover:bg-black/20 transition duration-300">
+                        <li
+                            class="cursor-pointer flex border-b border-gray-400 py-3 px-3 hover:bg-black/20 transition duration-300">
                             <i class="w-1/6 text-center mr-8 text-black/50 fa-solid fa-child"></i>
                             <span class="w-5/6 text-black">Men</span>
                         </li>
-                        <li class="cursor-pointer flex border-b border-gray-400 py-3 px-3 hover:bg-black/20 transition duration-300">
+                        <li
+                            class="cursor-pointer flex border-b border-gray-400 py-3 px-3 hover:bg-black/20 transition duration-300">
                             <i class="w-1/6 text-center mr-8 text-black/50 fa-solid fa-child-dress"></i>
                             <span class="w-5/6 text-black">Women</span>
                         </li>
-                        <li class="cursor-pointer flex border-b border-gray-400 py-3 px-3 hover:bg-black/20 transition duration-300">
+                        <li
+                            class="cursor-pointer flex border-b border-gray-400 py-3 px-3 hover:bg-black/20 transition duration-300">
                             <i class="w-1/6 text-center mr-8 text-black/50 fa-solid fa-plug"></i>
                             <span class="w-5/6 text-black">Electronisc</span>
                         </li>
-                        <li class="cursor-pointer flex border-b border-gray-400 py-3 px-3 hover:bg-black/20 transition duration-300">
+                        <li
+                            class="cursor-pointer flex border-b border-gray-400 py-3 px-3 hover:bg-black/20 transition duration-300">
                             <i class="w-1/6 text-center mr-8 text-black/50 fa-solid fa-headphones-simple"></i>
                             <span class="w-5/6 text-black">Headphones</span>
                         </li>
-                        <li class="cursor-pointer flex border-b border-gray-400 py-3 px-3 hover:bg-black/20 transition duration-300">
+                        <li
+                            class="cursor-pointer flex border-b border-gray-400 py-3 px-3 hover:bg-black/20 transition duration-300">
                             <i class="w-1/6 text-center mr-8 text-black/50 fa-regular fa-clock"></i>
                             <span class="w-5/6 text-black">Watches</span>
                         </li>
-                        <li class="cursor-pointer flex border-b border-gray-400 py-3 px-3 hover:bg-black/20 transition duration-300">
+                        <li
+                            class="cursor-pointer flex border-b border-gray-400 py-3 px-3 hover:bg-black/20 transition duration-300">
                             <i class="w-1/6 text-center mr-8 text-black/50 fa-solid fa-display"></i>
                             <span class="w-5/6 text-black">Computer</span>
                         </li>
-                        <li class="cursor-pointer flex border-b border-gray-400 py-3 px-3 hover:bg-black/20 transition duration-300">
+                        <li
+                            class="cursor-pointer flex border-b border-gray-400 py-3 px-3 hover:bg-black/20 transition duration-300">
                             <i class="w-1/6 text-center mr-8 text-black/50 fa-solid fa-mobile-screen-button"></i>
                             <span class="w-5/6 text-black">Mobile</span>
                         </li>
                     </ul>
-                </div>         
-               
+                </div>
+
             </div>
-            
+
             <div class="flex w-fit mx-auto">
-                <div class="bg-white w-40 pl-6 pr-3 py-3 text-base rounded-l-md border-r border-secondary relative flex justify-between items-center cursor-pointer"  onclick="openSortingList('all-cate-list-section','all-cate-arrow')">
+                <div class="bg-white w-40 pl-6 pr-3 py-3 text-base rounded-l-md border-r border-secondary relative flex justify-between items-center cursor-pointer"
+                    onclick="openSortingList('all-cate-list-section','all-cate-arrow')">
                     <span id="all-cate-display">All categories</span>
                     <i class="fa fa-angle-down ml-2 text-black/50 duration-200" id="all-cate-arrow"></i>
-                    
+
                     <div class="absolute top-14 left-0 w-full  bg-white flex flex-col border border-gray-300 rounded-md z-20 scale-0 duration-300"
-                id="all-cate-list-section">
+                        id="all-cate-list-section">
 
 
-                    <div class="hover:bg-slate-200 duration-150 py-2 cursor-pointer"
-                onclick="choseingSort('all-cate-1','all-cate-display',allCate)">
-                    <p class="font-semibold mx-2 ml-6" id="all-cate-1">All categories</p>
-                    </div>
+                        <div class="hover:bg-slate-200 duration-150 py-2 cursor-pointer"
+                            onclick="choseingSort('all-cate-1','all-cate-display',allCate)">
+                            <p class="font-semibold mx-2 ml-6" id="all-cate-1">All categories</p>
+                        </div>
 
-                    <div class="hover:bg-slate-200 duration-150 py-2 cursor-pointer"
-                        onclick="choseingSort('all-cate-2','all-cate-display',allCate)">
-                    <p class=" mx-2 ml-6" id="all-cate-2">Men
-                    </p>
-                    </div>
+                        <div class="hover:bg-slate-200 duration-150 py-2 cursor-pointer"
+                            onclick="choseingSort('all-cate-2','all-cate-display',allCate)">
+                            <p class=" mx-2 ml-6" id="all-cate-2">Men
+                            </p>
+                        </div>
 
-                    <div class="hover:bg-slate-200 duration-150 py-2 cursor-pointer"
-                onclick="choseingSort('all-cate-3','all-cate-display',allCate)">
-                    <p class=" mx-2 ml-6" id="all-cate-3">Women
-                    </p>
-                    </div>
+                        <div class="hover:bg-slate-200 duration-150 py-2 cursor-pointer"
+                            onclick="choseingSort('all-cate-3','all-cate-display',allCate)">
+                            <p class=" mx-2 ml-6" id="all-cate-3">Women
+                            </p>
+                        </div>
 
 
                     </div>
@@ -282,12 +325,14 @@
                 <form class="flex search-input-form">
                     <input id="search-input-one" type="search" placeholder="Search product..."
                         class="bg-white px-6 py-3 text-base border-none outline-none focus:ring-0 placeholder:text-black/50">
-                    <button type="submit" class="bg-secondary text-white px-6 h-full text-base rounded-r-md font-semibold">Search</button>
+                    <button type="submit"
+                        class="bg-secondary text-white px-6 h-full text-base rounded-r-md font-semibold">Search</button>
                 </form>
             </div>
 
             <div class="flex text-white space-x-4 w-1/5 xl:w-1/6 h-full items-center">
-                <div class="flex flex-col items-center cursor-pointer h-full justify-center" onclick="changePageAndSection('my-account-page','my-wishlist-section','btn-11','Wishlist')">
+                <div class="flex flex-col items-center cursor-pointer h-full justify-center"
+                    onclick="changePageAndSection('my-account-page','my-wishlist-section','btn-11','Wishlist')">
                     <i class="fa-regular fa-heart text-2xl relative">
                         <span class="absolute -top-2 -right-3 bg-secondary rounded-full text-[10px] px-1 py-1">4</span>
                     </i>
@@ -300,13 +345,14 @@
                     </i>
                     <p class="text-xs">Cart</p>
 
-                    <div class="absolute top-16 right-0 z-[21] bg-white hidden  group-hover:block w-72 text-black rounded-b p-3 cursor-default shadow-md border border-gray-300 border-t-0"> 
+                    <div
+                        class="absolute top-16 right-0 z-[21] bg-white hidden  group-hover:block w-72 text-black rounded-b p-3 cursor-default shadow-md border border-gray-300 border-t-0">
 
                         <div class="flex flex-col space-y-5">
                             <p class="font-medium border-b border-gray-300 w-full pb-2">Total 2 Items</p>
-        
+
                             <div class="flex justify-between">
-        
+
                                 <div class="flex items-center space-x-5">
                                     <img src="img/shoes/shoes-5.png" class="w-16">
                                     <div class="flex flex-col space-y-1">
@@ -319,9 +365,9 @@
                                 </div>
                                 <i class="fa-solid fa-xmark cursor-pointer pr-3 text-lg mt-2"></i>
                             </div>
-        
+
                             <div class="flex justify-between">
-        
+
                                 <div class="flex items-center space-x-5">
                                     <img src="img/headphone/headphone-2.png" class="w-16">
                                     <div class="flex flex-col space-y-1">
@@ -335,22 +381,26 @@
                                 <i class="fa-solid fa-xmark cursor-pointer pr-3 text-lg mt-2"></i>
                             </div>
                         </div>
-        
+
                         <div class="w-full flex flex-col space-y-3">
-        
+
                             <p class="w-full border-b border-gray-300 pt-3"></p>
-        
+
                             <div class="flex justify-between">
                                 <p class="font-medium">SUB TOTAL:</p>
                                 <p class="font-medium">$980.00</p>
                             </div>
-                            
+
                             <div class="flex w-full space-x-7">
-                                <button class="bg-primary text-white hover:bg-transparent hover:text-primary px-1 font-medium duration-500 rounded py-2 border border-primary w-1/2" onclick="changePage('cart-section')">VIEW CART</button>
-        
-                                <button class="bg-white text-primary hover:bg-primary hover:text-white px-1 font-medium duration-500 rounded py-2 border border-primary w-1/2" onclick="changePage('checkout-page')">CHECKOUT</button>
+                                <button
+                                    class="bg-primary text-white hover:bg-transparent hover:text-primary px-1 font-medium duration-500 rounded py-2 border border-primary w-1/2"
+                                    onclick="changePage('cart-section')">VIEW CART</button>
+
+                                <button
+                                    class="bg-white text-primary hover:bg-primary hover:text-white px-1 font-medium duration-500 rounded py-2 border border-primary w-1/2"
+                                    onclick="changePage('checkout-page')">CHECKOUT</button>
                             </div>
-                            
+
                         </div>
 
                     </div>
@@ -362,25 +412,31 @@
                     </i>
                     <p class="text-xs">Account</p>
 
-                    <div class="absolute top-16 right-0 z-[21] bg-white hidden  group-hover:flex flex-col space-y-3 w-52 text-black rounded-b p-3 cursor-default shadow-md border border-gray-300 border-t-0">
-                        
+                    <div
+                        class="absolute top-16 right-0 z-[21] bg-white hidden  group-hover:flex flex-col space-y-3 w-52 text-black rounded-b p-3 cursor-default shadow-md border border-gray-300 border-t-0">
+
                         <p class="text-sm font-semibold text-black/80">Welcome to RAFCART Shop</p>
 
                         <div class="flex w-full space-x-3">
-                            <button class="bg-primary text-white hover:bg-transparent hover:text-primary px-1 font-medium duration-500 rounded py-1 border border-primary w-1/2 text-sm" onclick="changePage('register-page')">JOIN</button>
-    
-                            <button class="bg-white text-primary hover:bg-primary hover:text-white px-1 font-medium duration-500 rounded py-1 border border-primary w-1/2 text-sm" onclick="changePage('login-page')">SING IN</button>
+                            <button
+                                class="bg-primary text-white hover:bg-transparent hover:text-primary px-1 font-medium duration-500 rounded py-1 border border-primary w-1/2 text-sm"
+                                onclick="changePage('register-page')">JOIN</button>
+
+                            <button
+                                class="bg-white text-primary hover:bg-primary hover:text-white px-1 font-medium duration-500 rounded py-1 border border-primary w-1/2 text-sm"
+                                onclick="changePage('login-page')">SING IN</button>
                         </div>
 
                         <div class="flex items-center cursor-pointer text-black/80"
-                        onclick="changePageAndSection('my-account-page','my-account-section','btn-1','Manage My Account')">
+                            onclick="changePageAndSection('my-account-page','my-account-section','btn-1','Manage My Account')">
                             <div class="w-8">
                                 <i class="fa-regular fa-address-card mx-auto"></i>
                             </div>
                             <p>My Account</p>
                         </div>
 
-                        <div class="flex items-center cursor-pointer text-black/80" onclick="changePageAndSection('my-account-page','my-order-history-section','btn-5','Order History')" >
+                        <div class="flex items-center cursor-pointer text-black/80"
+                            onclick="changePageAndSection('my-account-page','my-order-history-section','btn-5','Order History')">
                             <div class="w-8">
                                 <i class="fa-solid fa-gift mx-auto"></i>
                             </div>
@@ -388,14 +444,15 @@
                         </div>
 
                         <div class="flex items-center cursor-pointer text-black/80"
-                        onclick="changePageAndSection('my-account-page','my-wishlist-section','btn-11','Wishlist')">
+                            onclick="changePageAndSection('my-account-page','my-wishlist-section','btn-11','Wishlist')">
                             <div class="w-8">
                                 <i class="fa-regular fa-heart mx-auto"></i>
                             </div>
                             <p>My Wishlist</p>
                         </div>
 
-                        <div class="flex items-center cursor-pointer text-black/80" onclick="changePage('cart-section')">
+                        <div class="flex items-center cursor-pointer text-black/80"
+                            onclick="changePage('cart-section')">
                             <div class="w-8">
                                 <i class="fa-solid fa-cart-shopping mx-auto"></i>
                             </div>
@@ -422,144 +479,159 @@
     <main id="home-page">
         <!-- banner section start -->
         <section>
-        <div class="w-full flex xl:px-20 lg:px-7 lg:space-x-1">
+            <div class="w-full flex xl:px-20 lg:px-7 lg:space-x-1">
 
-            <div class="w-1/6 pt-2 border-r border-gray-400 hidden lg:block rounded">
-                <ul class="w-full">
-                    <li class="cursor-pointer flex border-b border-gray-400 py-3 px-3 hover:bg-black/20 transition duration-300">
-                        <i class="w-1/6 text-center mr-8 text-black/50 fa fa-shoe-prints"></i>
-                        <span class="w-5/6">Shoes</span>
-                    </li>
-                    <li class="cursor-pointer flex border-b border-gray-400 py-3 px-3 hover:bg-black/20 transition duration-300">
-                        <i class="w-1/6 text-center mr-8 text-black/50 fa-solid fa-child"></i>
-                        <span class="w-5/6">Men</span>
-                    </li>
-                    <li class="cursor-pointer flex border-b border-gray-400 py-3 px-3 hover:bg-black/20 transition duration-300">
-                        <i class="w-1/6 text-center mr-8 text-black/50 fa-solid fa-child-dress"></i>
-                        <span class="w-5/6">Women</span>
-                    </li>
-                    <li class="cursor-pointer flex border-b border-gray-400 py-3 px-3 hover:bg-black/20 transition duration-300">
-                        <i class="w-1/6 text-center mr-8 text-black/50 fa-solid fa-plug"></i>
-                        <span class="w-5/6">Electronisc</span>
-                    </li>
-                    <li class="cursor-pointer flex border-b border-gray-400 py-3 px-3 hover:bg-black/20 transition duration-300">
-                        <i class="w-1/6 text-center mr-8 text-black/50 fa-solid fa-headphones-simple"></i>
-                        <span class="w-5/6">Headphones</span>
-                    </li>
-                    <li class="cursor-pointer flex border-b border-gray-400 py-3 px-3 hover:bg-black/20 transition duration-300">
-                        <i class="w-1/6 text-center mr-8 text-black/50 fa-regular fa-clock"></i>
-                        <span class="w-5/6">Watches</span>
-                    </li>
-                    <li class="cursor-pointer flex border-b border-gray-400 py-3 px-3 hover:bg-black/20 transition duration-300">
-                        <i class="w-1/6 text-center mr-8 text-black/50 fa-solid fa-display"></i>
-                        <span class="w-5/6">Computer</span>
-                    </li>
-                    <li class="cursor-pointer flex border-b border-gray-400 py-3 px-3 hover:bg-black/20 transition duration-300">
-                        <i class="w-1/6 text-center mr-8 text-black/50 fa-solid fa-mobile-screen-button"></i>
-                        <span class="w-5/6">Mobile</span>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="w-full h-[400px] flex justify-between bg-[#b3bbbb] items-center px-3 xs:px-10 xl:px-20 sm:px-16">
-
-                <div class="w-full sm:w-3/5 text-center sm:text-left">
-                    <p class="text-lg">Get up to 50% off Today only</p>
-                    <p class="text-4xl sm:text-3xl md:text-4xl font-medium">iPhone 11 pro max</p>
-                    <p class="my-5"><span class="text-primary font-semibold">$450.00</span> <del class="font-medium text-black/60">$500.00</del></p>
-                    <Button
-                        class="bg-primary px-4 py-2 border border-primary hover:bg-transparent text-white hover:text-primary rounded-md duration-300 font-semibold" onclick="openShopPage('default-product')">Shop
-                        Now</Button>
+                <div class="w-1/6 pt-2 border-r border-gray-400 hidden lg:block rounded">
+                    <ul class="w-full">
+                        <li
+                            class="cursor-pointer flex border-b border-gray-400 py-3 px-3 hover:bg-black/20 transition duration-300">
+                            <i class="w-1/6 text-center mr-8 text-black/50 fa fa-shoe-prints"></i>
+                            <span class="w-5/6">Shoes</span>
+                        </li>
+                        <li
+                            class="cursor-pointer flex border-b border-gray-400 py-3 px-3 hover:bg-black/20 transition duration-300">
+                            <i class="w-1/6 text-center mr-8 text-black/50 fa-solid fa-child"></i>
+                            <span class="w-5/6">Men</span>
+                        </li>
+                        <li
+                            class="cursor-pointer flex border-b border-gray-400 py-3 px-3 hover:bg-black/20 transition duration-300">
+                            <i class="w-1/6 text-center mr-8 text-black/50 fa-solid fa-child-dress"></i>
+                            <span class="w-5/6">Women</span>
+                        </li>
+                        <li
+                            class="cursor-pointer flex border-b border-gray-400 py-3 px-3 hover:bg-black/20 transition duration-300">
+                            <i class="w-1/6 text-center mr-8 text-black/50 fa-solid fa-plug"></i>
+                            <span class="w-5/6">Electronisc</span>
+                        </li>
+                        <li
+                            class="cursor-pointer flex border-b border-gray-400 py-3 px-3 hover:bg-black/20 transition duration-300">
+                            <i class="w-1/6 text-center mr-8 text-black/50 fa-solid fa-headphones-simple"></i>
+                            <span class="w-5/6">Headphones</span>
+                        </li>
+                        <li
+                            class="cursor-pointer flex border-b border-gray-400 py-3 px-3 hover:bg-black/20 transition duration-300">
+                            <i class="w-1/6 text-center mr-8 text-black/50 fa-regular fa-clock"></i>
+                            <span class="w-5/6">Watches</span>
+                        </li>
+                        <li
+                            class="cursor-pointer flex border-b border-gray-400 py-3 px-3 hover:bg-black/20 transition duration-300">
+                            <i class="w-1/6 text-center mr-8 text-black/50 fa-solid fa-display"></i>
+                            <span class="w-5/6">Computer</span>
+                        </li>
+                        <li
+                            class="cursor-pointer flex border-b border-gray-400 py-3 px-3 hover:bg-black/20 transition duration-300">
+                            <i class="w-1/6 text-center mr-8 text-black/50 fa-solid fa-mobile-screen-button"></i>
+                            <span class="w-5/6">Mobile</span>
+                        </li>
+                    </ul>
                 </div>
 
-                <div class="w-2/5 hidden sm:block relative">
-                     <img src="img/iphone-12.png" class="w-48 absolute top-1/2 -translate-y-1/2 right-0">
+                <div
+                    class="w-full h-[400px] flex justify-between bg-[#b3bbbb] items-center px-3 xs:px-10 xl:px-20 sm:px-16">
+
+                    <div class="w-full sm:w-3/5 text-center sm:text-left">
+                        <p class="text-lg">Get up to 50% off Today only</p>
+                        <p class="text-4xl sm:text-3xl md:text-4xl font-medium">iPhone 11 pro max</p>
+                        <p class="my-5"><span class="text-primary font-semibold">$450.00</span> <del
+                                class="font-medium text-black/60">$500.00</del></p>
+                        <Button
+                            class="bg-primary px-4 py-2 border border-primary hover:bg-transparent text-white hover:text-primary rounded-md duration-300 font-semibold"
+                            onclick="openShopPage('default-product')">Shop
+                            Now</Button>
+                    </div>
+
+                    <div class="w-2/5 hidden sm:block relative">
+                        <img src="img/iphone-12.png" class="w-48 absolute top-1/2 -translate-y-1/2 right-0">
+                    </div>
+
                 </div>
 
             </div>
-
-        </div>
         </section>
         <!-- banner section end -->
 
         <!-- feature section start -->
         <section>
-        <div
-            class="grid grid-cols-1 md:grid-cols-3 gap-7 md:gap-5 lg:gap-7 mt-14 sm:w-2/3 md:w-full mx-auto w-full lg:px-7 px-3 xs:px-10 sm:px-16 xl:px-20">
+            <div
+                class="grid grid-cols-1 md:grid-cols-3 gap-7 md:gap-5 lg:gap-7 mt-14 sm:w-2/3 md:w-full mx-auto w-full lg:px-7 px-3 xs:px-10 sm:px-16 xl:px-20">
 
-            <div class="flex items-center border border-primary p-5 md:px-3 lg:px-5 justify-center space-x-5 rounded-md">
-                <i class="fa-solid fa-truck text-xl  lg:text-3xl text-primary"></i>
-                <div class="flex flex-col">
-                    <p class="font-medium text-sm  lg:text-lg"> Free shipping</p>
-                    <p class="text-xs text-gray-600"> Orders over $200</p>
+                <div
+                    class="flex items-center border border-primary p-5 md:px-3 lg:px-5 justify-center space-x-5 rounded-md">
+                    <i class="fa-solid fa-truck text-xl  lg:text-3xl text-primary"></i>
+                    <div class="flex flex-col">
+                        <p class="font-medium text-sm  lg:text-lg"> Free shipping</p>
+                        <p class="text-xs text-gray-600"> Orders over $200</p>
+                    </div>
+
+                </div>
+
+                <div
+                    class="flex items-center border border-primary p-5 md:px-3 lg:px-5 justify-center space-x-5 rounded-md">
+                    <i class="fa-solid fa-hand-holding-dollar text-xl lg:text-3xl text-primary"></i>
+                    <div class="flex flex-col">
+                        <p class="font-medium text-sm  lg:text-lg">30Money return</p>
+                        <p class="text-xs text-gray-600"> 30 Days money return</p>
+                    </div>
+
+                </div>
+
+                <div
+                    class="flex items-center border border-primary p-5 md:px-3 lg:px-5 justify-center space-x-5 rounded-md">
+                    <i class="fa-regular fa-clock text-xl  lg:text-3xl text-primary"></i>
+                    <div class="flex flex-col">
+                        <p class="font-medium text-sm  lg:text-lg"> 24/7 Support</p>
+                        <p class="text-xs text-gray-600">Customer support</p>
+                    </div>
+
                 </div>
 
             </div>
-
-            <div class="flex items-center border border-primary p-5 md:px-3 lg:px-5 justify-center space-x-5 rounded-md">
-                <i class="fa-solid fa-hand-holding-dollar text-xl lg:text-3xl text-primary"></i>
-                <div class="flex flex-col">
-                    <p class="font-medium text-sm  lg:text-lg">30Money return</p>
-                    <p class="text-xs text-gray-600"> 30 Days money return</p>
-                </div>
-
-            </div>
-
-            <div class="flex items-center border border-primary p-5 md:px-3 lg:px-5 justify-center space-x-5 rounded-md">
-                <i class="fa-regular fa-clock text-xl  lg:text-3xl text-primary"></i>
-                <div class="flex flex-col">
-                    <p class="font-medium text-sm  lg:text-lg"> 24/7 Support</p>
-                    <p class="text-xs text-gray-600">Customer support</p>
-                </div>
-
-            </div>
-
-        </div>
 
         </section>
         <!-- feature section end -->
 
         <!-- top ranking section start -->
         <section>
-        <div class="w-full lg:px-7 px-3 xs:px-10 mt-10 xl:px-20">
+            <div class="w-full lg:px-7 px-3 xs:px-10 mt-10 xl:px-20">
 
-            <p class="text-2xl md:text-3xl font-semibold">Top Ranking</p>
+                <p class="text-2xl md:text-3xl font-semibold">Top Ranking</p>
 
-            <section id="top-ranking-section" class="w-full grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-7 gap-6">
-
-
-
-                <div id="watch-section" class="flex flex-col space-y-5 w-full">
-                    <p class="text-lg font-semibold">Watch</p>
-                </div>
-
-                <div id="phone-section" class="flex flex-col space-y-5 w-full">
-                    <p class="text-lg font-semibold">Phone</p>
-                </div>
-
-                <div id="laptop-section" class="flex flex-col space-y-5 w-full lg:hidden xl:block">
-                    <p class="text-lg font-semibold">Laptop</p>
-                </div>
-
-                <div id="headphone-section" class="flex flex-col space-y-5 w-full">
-                    <p class="text-lg font-semibold">Headphones</p>
-                </div>
+                <section id="top-ranking-section"
+                    class="w-full grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-7 gap-6">
 
 
 
-            </section>
+                    <div id="watch-section" class="flex flex-col space-y-5 w-full">
+                        <p class="text-lg font-semibold">Watch</p>
+                    </div>
 
-        </div>
+                    <div id="phone-section" class="flex flex-col space-y-5 w-full">
+                        <p class="text-lg font-semibold">Phone</p>
+                    </div>
+
+                    <div id="laptop-section" class="flex flex-col space-y-5 w-full lg:hidden xl:block">
+                        <p class="text-lg font-semibold">Laptop</p>
+                    </div>
+
+                    <div id="headphone-section" class="flex flex-col space-y-5 w-full">
+                        <p class="text-lg font-semibold">Headphones</p>
+                    </div>
+
+
+
+                </section>
+
+            </div>
         </section>
         <!-- top ranking section end -->
 
         <!-- New arrivals section start -->
         <section>
-        <div class="w-full lg:px-7 px-3 xs:px-10 my-16 xl:px-20 sm:px-16">
-            <p class="text-2xl md:text-3xl font-semibold my-10">New Arrivals</p>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5" id="new-arrival-section">
+            <div class="w-full lg:px-7 px-3 xs:px-10 my-16 xl:px-20 sm:px-16">
+                <p class="text-2xl md:text-3xl font-semibold my-10">New Arrivals</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5" id="new-arrival-section">
 
-                <!--                 
+                    <!--                 
                 <div class="flex flex-col border border-gray-400 pb-5 rounded-md group h-80 space-y-5">
                     <div class="w-full h-3/5 bg-slate-200 p-5 relative">
                         <img src="img/monitor/hd-monitor.png" class=" w-auto mx-auto h-[120px]">
@@ -594,32 +666,33 @@
                     </div>
                 </div> -->
 
+                </div>
             </div>
-        </div>
         </section>
 
         <!-- New arrivals section end -->
 
         <!-- offer section start -->
         <section>
-        <img src="img/offer-3.jpg" class="w-full lg:px-7 px-3 xs:px-10 my-16 xl:px-20 sm:px-16 h-36 sm:h-56 md:h-auto">
+            <img src="img/offer-3.jpg"
+                class="w-full lg:px-7 px-3 xs:px-10 my-16 xl:px-20 sm:px-16 h-36 sm:h-56 md:h-auto">
         </section>
         <!-- offer section end -->
 
         <!-- recomended product section start -->
         <section>
-        <div class="w-full lg:px-7 px-3 xs:px-10 my-16 xl:px-20 sm:px-16">
-            <div class="flex justify-between items-center">
-                <p class="text-2xl md:text-3xl font-semibold my-10">Recomended For You</p>
-                <div class="flex items-center text-primary font-bold space-x-3 cursor-pointer">
-                    <span>See More</span>
-                    <i class="fa-solid fa-angle-right"></i>
+            <div class="w-full lg:px-7 px-3 xs:px-10 my-16 xl:px-20 sm:px-16">
+                <div class="flex justify-between items-center">
+                    <p class="text-2xl md:text-3xl font-semibold my-10">Recomended For You</p>
+                    <div class="flex items-center text-primary font-bold space-x-3 cursor-pointer">
+                        <span>See More</span>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
                 </div>
-            </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5" id="recomended-product-section">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5" id="recomended-product-section">
 
 
-            </div>
+                </div>
         </section>
         <!-- recomended product section end -->
 
@@ -627,34 +700,34 @@
         <!-- mobile apps add start -->
         <section class="w-full lg:px-7 px-3 xs:px-10 my-16 xl:px-20 sm:px-16 md:h-auto">
 
-        <div class="flex lg:items-center flex-col lg:flex-row bg-[#e5e5e58c] p-8 rounded-md">
-            <div class="lg:w-1/2">
-                <img src="img/mobile-view.png" class="max-h-[450px] w-72 lg:w-auto mx-auto">
-            </div>
-            <div class="flex space-y-3 flex-col lg:w-2/5">
-                <p class="text-lg sm:text-2xl font-medium">
-                    Download RAFCART App Now!
-                </p>
-                <p class="text-base sm:text-lg font-normal py-3">
-                    Shopping fastly and easily more with our app. Get a link to
-                    download the app on your phone
-                </p>
-
-                <div class="flex w-full sm:w-3/4 md:w-3/5 lg:w-full">
-                    <input type="text" placeholder="Email Address"
-                        class="border-2 border-primary py-2 px-3 focus:ring-0 focus:border-primary rounded-l-md w-3/4">
-                    <button
-                        class="bg-primary text-white hover:text-primary border-2 border-primary py-2 px-5 hover:bg-transparent border-l-0 transition font-semibold rounded-r-md w-fit xs:w-fit">
-                        Subscribe
-                    </button>
+            <div class="flex lg:items-center flex-col lg:flex-row bg-[#e5e5e58c] p-8 rounded-md">
+                <div class="lg:w-1/2">
+                    <img src="img/mobile-view.png" class="max-h-[450px] w-72 lg:w-auto mx-auto">
                 </div>
+                <div class="flex space-y-3 flex-col lg:w-2/5">
+                    <p class="text-lg sm:text-2xl font-medium">
+                        Download RAFCART App Now!
+                    </p>
+                    <p class="text-base sm:text-lg font-normal py-3">
+                        Shopping fastly and easily more with our app. Get a link to
+                        download the app on your phone
+                    </p>
 
-                <div class="flex items-center w-4/5 xs:w-3/5 md:w-1/3  lg:w-3/5 space-x-7 pt-5">
-                    <img src="img/googleplay.png" class="w-1/2 rounded-md cursor-pointer">
-                    <img src="img/applestore.png" class="w-1/2 rounded-md cursor-pointer">
+                    <div class="flex w-full sm:w-3/4 md:w-3/5 lg:w-full">
+                        <input type="text" placeholder="Email Address"
+                            class="border-2 border-primary py-2 px-3 focus:ring-0 focus:border-primary rounded-l-md w-3/4">
+                        <button
+                            class="bg-primary text-white hover:text-primary border-2 border-primary py-2 px-5 hover:bg-transparent border-l-0 transition font-semibold rounded-r-md w-fit xs:w-fit">
+                            Subscribe
+                        </button>
+                    </div>
+
+                    <div class="flex items-center w-4/5 xs:w-3/5 md:w-1/3  lg:w-3/5 space-x-7 pt-5">
+                        <img src="img/googleplay.png" class="w-1/2 rounded-md cursor-pointer">
+                        <img src="img/applestore.png" class="w-1/2 rounded-md cursor-pointer">
+                    </div>
                 </div>
             </div>
-        </div>
 
         </section>
 
@@ -662,7 +735,7 @@
     </main>
     <!--home page  end-->
 
-    
+
     <!-- responsive menu and page start-->
     <div>
         <!-- responsive menu section start -->
@@ -707,76 +780,94 @@
                         onclick="hideSideBar('menu-sideBar')"></i>
 
                 </div>
-                
-                <div class="flex items-center py-3 px-4 border-b border-gray-300 cursor-pointer hover:bg-black/20 duration-200" onclick="changePage('home-page')">
+
+                <div class="flex items-center py-3 px-4 border-b border-gray-300 cursor-pointer hover:bg-black/20 duration-200"
+                    onclick="changePage('home-page')">
                     <h2>Home</h2>
                 </div>
 
-                <div class="flex items-center py-3 px-4 border-b border-gray-300 cursor-pointer hover:bg-black/20 duration-200" onclick="openShopPage('default-product')">
+                <div class="flex items-center py-3 px-4 border-b border-gray-300 cursor-pointer hover:bg-black/20 duration-200"
+                    onclick="openShopPage('default-product')">
                     <h2>Shop</h2>
                 </div>
 
-                <div class="flex justify-between space-x-5 items-center py-3 px-4 pr-7 border-b border-gray-300 cursor-pointer hover:bg-black/20 duration-200" onclick="extendBtnSection(this,'my-account-extended-btn-section',
+                <div class="flex justify-between space-x-5 items-center py-3 px-4 pr-7 border-b border-gray-300 cursor-pointer hover:bg-black/20 duration-200"
+                    onclick="extendBtnSection(this,'my-account-extended-btn-section',
                 'h-[197px]',extendBtnSection2)">
                     <h2>My Account</h2>
                     <i class="fa fa-angle-down ml-2 text-black/50 duration-200" id="extended-arr-1"></i>
                 </div>
 
-                <div class="flex flex-col justify-center h-0 overflow-hidden opacity-0 duration-300" id="my-account-extended-btn-section">
-                    <div class="flex items-center border-b border-gray-300 py-3 px-4 cursor-pointer hover:bg-black/20 duration-200" onclick="changePageAndSection('my-account-page','my-account-section','btn-1','Manage My Account')">
+                <div class="flex flex-col justify-center h-0 overflow-hidden opacity-0 duration-300"
+                    id="my-account-extended-btn-section">
+                    <div class="flex items-center border-b border-gray-300 py-3 px-4 cursor-pointer hover:bg-black/20 duration-200"
+                        onclick="changePageAndSection('my-account-page','my-account-section','btn-1','Manage My Account')">
                         <h2 class="px-10">My Account</h2>
                     </div>
-                    
-                    <div class="flex items-center border-b border-gray-300 py-3 px-4 cursor-pointer hover:bg-black/20 duration-200">
+
+                    <div
+                        class="flex items-center border-b border-gray-300 py-3 px-4 cursor-pointer hover:bg-black/20 duration-200">
                         <h2 class="px-10" onclick="changePage('login-page')">Login</h2>
                     </div>
 
-                    <div class="flex items-center border-b border-gray-300 py-3 px-4 cursor-pointer hover:bg-black/20 duration-200">
+                    <div
+                        class="flex items-center border-b border-gray-300 py-3 px-4 cursor-pointer hover:bg-black/20 duration-200">
                         <h2 class="px-10" onclick="changePage('register-page')">Register</h2>
                     </div>
 
-                    <div class="flex items-center border-b border-gray-300 py-3 px-4 cursor-pointer hover:bg-black/20 duration-200">
+                    <div
+                        class="flex items-center border-b border-gray-300 py-3 px-4 cursor-pointer hover:bg-black/20 duration-200">
                         <h2 class="px-10" onclick="changePage('forgot-password-page')">Fotget Password</h2>
                     </div>
 
                 </div>
 
-                <div class="flex justify-between space-x-5 items-center py-3 px-4 pr-7 border-b border-gray-300 cursor-pointer hover:bg-black/20 duration-200" onclick="extendBtnSection(this,'other-pages-extended-btn-section',
+                <div class="flex justify-between space-x-5 items-center py-3 px-4 pr-7 border-b border-gray-300 cursor-pointer hover:bg-black/20 duration-200"
+                    onclick="extendBtnSection(this,'other-pages-extended-btn-section',
                 'h-[395px]',extendBtnSection1)">
                     <h2>Other Pages</h2>
-                    <i class="fa fa-angle-down ml-2 text-black/50 duration-200"id="extended-arr-2"></i>
+                    <i class="fa fa-angle-down ml-2 text-black/50 duration-200" id="extended-arr-2"></i>
                 </div>
 
-                <div class="flex flex-col justify-center h-0 overflow-hidden opacity-0 duration-300" id="other-pages-extended-btn-section">
-                    <div class="flex items-center border-b border-gray-300 py-3 px-4 cursor-pointer hover:bg-black/20 duration-200" onclick="changePage('about-us-page')">
+                <div class="flex flex-col justify-center h-0 overflow-hidden opacity-0 duration-300"
+                    id="other-pages-extended-btn-section">
+                    <div class="flex items-center border-b border-gray-300 py-3 px-4 cursor-pointer hover:bg-black/20 duration-200"
+                        onclick="changePage('about-us-page')">
                         <h2 class="px-10">About Us</h2>
                     </div>
-                    
-                    <div class="flex items-center border-b border-gray-300 py-3 px-4 cursor-pointer hover:bg-black/20 duration-200" onclick="changePage('contact-page')">
+
+                    <div class="flex items-center border-b border-gray-300 py-3 px-4 cursor-pointer hover:bg-black/20 duration-200"
+                        onclick="changePage('contact-page')">
                         <h2 class="px-10">Contact Us</h2>
                     </div>
 
-                    <div class="flex items-center border-b border-gray-300 py-3 px-4 cursor-pointer hover:bg-black/20 duration-200" onclick="changePage('track-order-page')">
+                    <div class="flex items-center border-b border-gray-300 py-3 px-4 cursor-pointer hover:bg-black/20 duration-200"
+                        onclick="changePage('track-order-page')">
                         <h2 class="px-10">Track Order</h2>
                     </div>
 
-                    <div class="flex items-center border-b border-gray-300 py-3 px-4 cursor-pointer hover:bg-black/20 duration-200" onclick="changePage('faq-page')">
+                    <div class="flex items-center border-b border-gray-300 py-3 px-4 cursor-pointer hover:bg-black/20 duration-200"
+                        onclick="changePage('faq-page')">
                         <h2 class="px-10">FAQ</h2>
                     </div>
-                    
-                    <div class="flex items-center border-b border-gray-300 py-3 px-4 cursor-pointer hover:bg-black/20 duration-200" onclick="changePage('not-found-page')">
+
+                    <div class="flex items-center border-b border-gray-300 py-3 px-4 cursor-pointer hover:bg-black/20 duration-200"
+                        onclick="changePage('not-found-page')">
                         <h2 class="px-10">404</h2>
                     </div>
-                    
-                    <div class="flex items-center border-b border-gray-300 py-3 px-4 cursor-pointer hover:bg-black/20 duration-200" onclick="changePage('checkout-page')">
+
+                    <div class="flex items-center border-b border-gray-300 py-3 px-4 cursor-pointer hover:bg-black/20 duration-200"
+                        onclick="changePage('checkout-page')">
                         <h2 class="px-10">Checkout</h2>
                     </div>
 
-                    <div class="flex items-center border-b border-gray-300 py-3 px-4 cursor-pointer hover:bg-black/20 duration-200" onclick="changePage('payment-page')">
+                    <div class="flex items-center border-b border-gray-300 py-3 px-4 cursor-pointer hover:bg-black/20 duration-200"
+                        onclick="changePage('payment-page')">
                         <h2 class="px-10">Payment</h2>
                     </div>
 
-                    <div class="flex items-center border-b border-gray-300 py-3 px-4 cursor-pointer hover:bg-black/20 duration-200" onclick="changePage('order-complete-page')">
+                    <div class="flex items-center border-b border-gray-300 py-3 px-4 cursor-pointer hover:bg-black/20 duration-200"
+                        onclick="changePage('order-complete-page')">
                         <h2 class="px-10">Order Complete</h2>
                     </div>
 
@@ -790,63 +881,64 @@
         <section id="categorise-sideBar" class="lg:hidden fixed top-0 -left-full xs:w-[320px] w-full duration-700 z-40">
             <div class="bg-white h-screen border-r border-gray-400">
                 <div class="bg-primary w-full p-3 h-14 relative flex items-center">
-                    <span class="absolute left-1/2 -translate-x-1/2 text-white font-medium text-lg">All Categorise</span>
+                    <span class="absolute left-1/2 -translate-x-1/2 text-white font-medium text-lg">All
+                        Categorise</span>
                     <i class="fa-solid fa-xmark cursor-pointer text-white absolute right-0 pr-7 text-lg"
                         onclick="hideSideBar('categorise-sideBar')"></i>
                 </div>
 
                 <div class="flex items-center py-3 px-4 border-b border-gray-300 hover:bg-black/20 duration-200">
                     <div class="text-center w-12">
-                    <i class="text-center mr-8 text-black/50 fa fa-shoe-prints"></i>
+                        <i class="text-center mr-8 text-black/50 fa fa-shoe-prints"></i>
                     </div>
                     <h2>Shoes</h2>
                 </div>
 
                 <div class="flex items-center py-3 px-4 border-b border-gray-300 hover:bg-black/20 duration-200">
                     <div class="text-center w-12">
-                    <i class="text-center mr-8 text-black/50 fa-solid fa-child"></i>
+                        <i class="text-center mr-8 text-black/50 fa-solid fa-child"></i>
                     </div>
                     <h2>Mens</h2>
                 </div>
 
                 <div class="flex items-center py-3 px-4 border-b border-gray-300 hover:bg-black/20 duration-200">
                     <div class="text-center w-12">
-                    <i class="text-center mr-8 text-black/50 fa-solid fa-child-dress"></i>
+                        <i class="text-center mr-8 text-black/50 fa-solid fa-child-dress"></i>
                     </div>
                     <h2>Women</h2>
                 </div>
 
                 <div class="flex items-center py-3 px-4 border-b border-gray-300 hover:bg-black/20 duration-200">
                     <div class="text-center w-12">
-                    <i class="text-center mr-8 text-black/50 fa-solid fa-plug"></i>
+                        <i class="text-center mr-8 text-black/50 fa-solid fa-plug"></i>
                     </div>
                     <h2>Electronisc</h2>
                 </div>
 
                 <div class="flex items-center py-3 px-4 border-b border-gray-300 hover:bg-black/20 duration-200">
                     <div class="text-center w-12">
-                    <i class="text-center mr-8 text-black/50 fa-solid fa-headphones-simple"></i>
+                        <i class="text-center mr-8 text-black/50 fa-solid fa-headphones-simple"></i>
                     </div>
                     <h2>Headphones</h2>
                 </div>
 
                 <div class="flex items-center py-3 px-4 border-b border-gray-300 hover:bg-black/20 duration-200">
                     <div class="text-center w-12">
-                    <i class="text-center mr-8 text-black/50 fa-regular fa-clock"></i>
+                        <i class="text-center mr-8 text-black/50 fa-regular fa-clock"></i>
                     </div>
                     <h2>Watches</h2>
                 </div>
 
                 <div class="flex items-center py-3 px-4 border-b border-gray-300 hover:bg-black/20 duration-200">
                     <div class="text-center w-12">
-                    <i class="text-center mr-8 text-black/50 fa-solid fa-display"></i>
+                        <i class="text-center mr-8 text-black/50 fa-solid fa-display"></i>
                     </div>
                     <h2>Computer</h2>
                 </div>
 
                 <div class="flex items-center py-3 px-4 border-b border-gray-300 hover:bg-black/20 duration-200">
                     <div class="text-center w-12">
-                    <i class="text-center mr-8 text-black/50 fa-solid fa-mobile-screen-button"></i>
+                        <i class="text-center mr-8 text-black/50 fa-solid fa-mobile-screen-button"></i>
                     </div>
                     <h2>Mobile</h2>
                 </div>
@@ -932,13 +1024,17 @@
                         <p class="font-medium">SUB TOTAL:</p>
                         <p class="font-medium">$980.00</p>
                     </div>
-                    
-                    <div class="flex w-full space-x-7">
-                        <button class="bg-primary text-white hover:bg-transparent hover:text-primary px-5 font-medium duration-500 rounded py-2 border border-primary w-1/2" onclick="changePage('cart-section')">VIEW CART</button>
 
-                        <button class="bg-white text-primary hover:bg-primary hover:text-white px-5 font-medium duration-500 rounded py-2 border border-primary w-1/2" onclick="changePage('checkout-page')">CHECKOUT</button>
+                    <div class="flex w-full space-x-7">
+                        <button
+                            class="bg-primary text-white hover:bg-transparent hover:text-primary px-5 font-medium duration-500 rounded py-2 border border-primary w-1/2"
+                            onclick="changePage('cart-section')">VIEW CART</button>
+
+                        <button
+                            class="bg-white text-primary hover:bg-primary hover:text-white px-5 font-medium duration-500 rounded py-2 border border-primary w-1/2"
+                            onclick="changePage('checkout-page')">CHECKOUT</button>
                     </div>
-                    
+
                 </div>
             </div>
         </section>
@@ -1090,18 +1186,18 @@
 
 
                                     <div class="hover:bg-slate-200 duration-150 py-3 cursor-pointer"
-                                    onclick="choseingSort('sorting1','display-sorting-1',allSortngSection1)">
+                                        onclick="choseingSort('sorting1','display-sorting-1',allSortngSection1)">
                                         <p class="font-semibold mx-2" id="sorting1">
                                             Default Sorting</p>
                                     </div>
                                     <div class="hover:bg-slate-200 duration-150 py-3 cursor-pointer"
-                                    onclick="choseingSort('sorting2','display-sorting-1',allSortngSection1)">
+                                        onclick="choseingSort('sorting2','display-sorting-1',allSortngSection1)">
                                         <p class=" mx-2" id="sorting2">Price
                                             High-Low
                                         </p>
                                     </div>
                                     <div class="hover:bg-slate-200 duration-150 py-3 cursor-pointer"
-                                    onclick="choseingSort('sorting3','display-sorting-1',allSortngSection1)">
+                                        onclick="choseingSort('sorting3','display-sorting-1',allSortngSection1)">
                                         <p class=" mx-2" id="sorting3">Price
                                             Low-High
                                         </p>
@@ -1149,19 +1245,19 @@
 
 
                                         <div class="hover:bg-slate-200 duration-150 py-3 cursor-pointer"
-                                        onclick="choseingSort('sorting4','display-sorting-2',allSortngSection2)">
+                                            onclick="choseingSort('sorting4','display-sorting-2',allSortngSection2)">
                                             <p class="font-semibold mx-2" id="sorting4">
                                                 Default Sorting</p>
                                         </div>
                                         <div class="hover:bg-slate-200 duration-150 py-3 cursor-pointer"
-                                        onclick="choseingSort('sorting5','display-sorting-2',allSortngSection2)">
+                                            onclick="choseingSort('sorting5','display-sorting-2',allSortngSection2)">
                                             <p class=" mx-2" id="sorting5">
                                                 Price
                                                 High-Low
                                             </p>
                                         </div>
                                         <div class="hover:bg-slate-200 duration-150 py-3 cursor-pointer"
-                                        onclick="choseingSort('sorting6','display-sorting-2',allSortngSection2)">
+                                            onclick="choseingSort('sorting6','display-sorting-2',allSortngSection2)">
                                             <p class=" mx-2" id="sorting6">
                                                 Price
                                                 Low-High
@@ -1193,66 +1289,68 @@
                     <!-- list  and grid view all pages number-->
                     <div id="list-&-gird-view-all-pages-number">
 
-                    <!-- list pages number section start -->
-                    <div class="hidden mx-auto w-fit flex space-x-3 mt-5" id="list-product-pages-number">
+                        <!-- list pages number section start -->
+                        <div class="hidden mx-auto w-fit flex space-x-3 mt-5" id="list-product-pages-number">
 
-                        <div class="w-8 h-8 border border-gray-400 flex items-center justify-center cursor-pointer bg-primary text-white"
-                            onclick="changePageOfListProduct(shopPageListProduct1,this.id)" id="list-page-num-one">
-                            1
+                            <div class="w-8 h-8 border border-gray-400 flex items-center justify-center cursor-pointer bg-primary text-white"
+                                onclick="changePageOfListProduct(shopPageListProduct1,this.id)" id="list-page-num-one">
+                                1
+                            </div>
+
+                            <div class="w-8 h-8 border border-gray-400 flex items-center justify-center cursor-pointer"
+                                onclick="changePageOfListProduct(shopPageListProduct2,this.id)" id="list-page-num-two">
+                                2
+                            </div>
+
+                            <div class="w-8 h-8 border border-gray-400 flex items-center justify-center cursor-pointer"
+                                onclick="changePageOfListProduct(shopPageListProduct3,this.id)"
+                                id="list-page-num-three">
+                                3
+                            </div>
+
+                            <div class="w-8 h-8 border border-gray-400 flex items-center justify-center cursor-pointer"
+                                id="shop-page-4">
+                                4
+                            </div>
+
+                            <div class="w-8 h-8 border border-gray-400 flex items-center justify-center cursor-pointer"
+                                id="shop-page-next">
+                                <i class="fa-solid fa-arrow-right-long"></i>
+                            </div>
+
                         </div>
+                        <!-- list pages number section end -->
 
-                        <div class="w-8 h-8 border border-gray-400 flex items-center justify-center cursor-pointer"
-                            onclick="changePageOfListProduct(shopPageListProduct2,this.id)" id="list-page-num-two">
-                            2
+
+                        <!-- grid pages number section start -->
+                        <div class="mx-auto w-fit flex space-x-3 mt-5" id="grid-product-pages-number">
+
+                            <div class="w-8 h-8 border border-gray-400 flex items-center justify-center cursor-pointer bg-primary text-white"
+                                onclick="changePageOfGridProduct(shopPageGridProduct1,this.id)" id="grid-page-num-one">
+                                1
+                            </div>
+
+                            <div class="w-8 h-8 border border-gray-400 flex items-center justify-center cursor-pointer"
+                                onclick="changePageOfGridProduct(shopPageGridProduct2,this.id)" id="grid-page-num-two">
+                                2
+                            </div>
+
+                            <div class="w-8 h-8 border border-gray-400 flex items-center justify-center cursor-pointer"
+                                onclick="changePageOfGridProduct(shopPageGridProduct3,this.id)"
+                                id="grid-page-num-three">
+                                3
+                            </div>
+
+                            <div class="w-8 h-8 border border-gray-400 flex items-center justify-center cursor-pointer">
+                                4
+                            </div>
+
+                            <div class="w-8 h-8 border border-gray-400 flex items-center justify-center cursor-pointer">
+                                <i class="fa-solid fa-arrow-right-long"></i>
+                            </div>
+
                         </div>
-
-                        <div class="w-8 h-8 border border-gray-400 flex items-center justify-center cursor-pointer"
-                            onclick="changePageOfListProduct(shopPageListProduct3,this.id)" id="list-page-num-three">
-                            3
-                        </div>
-
-                        <div class="w-8 h-8 border border-gray-400 flex items-center justify-center cursor-pointer"
-                            id="shop-page-4">
-                            4
-                        </div>
-
-                        <div class="w-8 h-8 border border-gray-400 flex items-center justify-center cursor-pointer"
-                            id="shop-page-next">
-                            <i class="fa-solid fa-arrow-right-long"></i>
-                        </div>
-
-                    </div>
-                    <!-- list pages number section end -->
-
-
-                    <!-- grid pages number section start -->
-                    <div class="mx-auto w-fit flex space-x-3 mt-5" id="grid-product-pages-number">
-
-                        <div class="w-8 h-8 border border-gray-400 flex items-center justify-center cursor-pointer bg-primary text-white"
-                            onclick="changePageOfGridProduct(shopPageGridProduct1,this.id)" id="grid-page-num-one">
-                            1
-                        </div>
-
-                        <div class="w-8 h-8 border border-gray-400 flex items-center justify-center cursor-pointer"
-                            onclick="changePageOfGridProduct(shopPageGridProduct2,this.id)" id="grid-page-num-two">
-                            2
-                        </div>
-
-                        <div class="w-8 h-8 border border-gray-400 flex items-center justify-center cursor-pointer"
-                            onclick="changePageOfGridProduct(shopPageGridProduct3,this.id)" id="grid-page-num-three">
-                            3
-                        </div>
-
-                        <div class="w-8 h-8 border border-gray-400 flex items-center justify-center cursor-pointer">
-                            4
-                        </div>
-
-                        <div class="w-8 h-8 border border-gray-400 flex items-center justify-center cursor-pointer">
-                            <i class="fa-solid fa-arrow-right-long"></i>
-                        </div>
-
-                    </div>
-                    <!-- grid pages number section end -->
+                        <!-- grid pages number section end -->
 
                     </div>
                     <!-- list  and grid view all pages  number-->
@@ -1296,7 +1394,8 @@
                             class="cursor-pointer focus:ring-0 text-primary border-primary">
                         <label for="remeber" class="cursor-pointer">Remember Me</label>
                     </p>
-                    <p class="text-primary hover:underline cursor-pointer" onclick="changePage('forgot-password-page')">Forgot Password?</p>
+                    <p class="text-primary hover:underline cursor-pointer" onclick="changePage('forgot-password-page')">
+                        Forgot Password?</p>
                 </div>
 
                 <button
@@ -1311,8 +1410,8 @@
                     <button
                         class="text-white w-1/2 bg-yellow-600 hover:bg-transparent text-center py-1 rounded-md hover:text-yellow-600 border border-yellow-600 duration-500 text-base font-semibold">Google</button>
                 </div>
-                <p class="text-center w-full text-base">Don't Have an Account? <a
-                        onclick="changePage('register-page')" class="hover:underline cursor-pointer text-primary">
+                <p class="text-center w-full text-base">Don't Have an Account? <a onclick="changePage('register-page')"
+                        class="hover:underline cursor-pointer text-primary">
                         Register
                         Now</a></p>
             </div>
@@ -1364,7 +1463,8 @@
                             class="cursor-pointer focus:ring-0 text-primary border-primary">
                     </p>
                     <p class="text-base"><label for="agree">I have read and agree to the </label> <span
-                            class="text-primary hover:underline cursor-pointer" onclick="changePage('terms-conditions-page')">terms & conditions</span></p>
+                            class="text-primary hover:underline cursor-pointer"
+                            onclick="changePage('terms-conditions-page')">terms & conditions</span></p>
                 </div>
                 <!-- button section -->
                 <button
@@ -1381,8 +1481,8 @@
                         class="text-white w-1/2 bg-yellow-600 hover:bg-transparent text-center py-1 rounded duration-500 hover:text-yellow-600 border border-yellow-600 text-base font-semibold">Google</button>
                 </div>
                 <!-- button section -->
-                <p class="text-center w-full text-base">Already Have an Account? <a
-                        onclick="changePage('login-page')" class="hover:underline cursor-pointer text-primary">Login
+                <p class="text-center w-full text-base">Already Have an Account? <a onclick="changePage('login-page')"
+                        class="hover:underline cursor-pointer text-primary">Login
                         Now</a></p>
             </div>
 
@@ -1436,8 +1536,7 @@
         <div
             class="w-full mt-10 sm:px-16 lg:px-7 xl:px-20 px-3 xs:px-10 flex flex-col space-y-10 lg:space-y-0 lg:flex-row lg:space-x-7">
 
-            <div
-                class="w-full lg:w-3/5 xl:w-2/3 shadow-lg flex flex-col space-y-3 p-5 mx-auto rounded-lg">
+            <div class="w-full lg:w-3/5 xl:w-2/3 shadow-lg flex flex-col space-y-3 p-5 mx-auto rounded-lg">
                 <p class="text-2xl font-semibold">LEAVE US A MESSAGE</p>
                 <p class="text-base">Use the form below to get in touch with the sales team</p>
 
@@ -1495,8 +1594,7 @@
                 </div>
             </div>
 
-            <div
-                class="w-full lg:w-2/5 xl:w-1/3 flex flex-col space-y-5 shadow-lg mx-auto rounded-lg">
+            <div class="w-full lg:w-2/5 xl:w-1/3 flex flex-col space-y-5 shadow-lg mx-auto rounded-lg">
 
                 <div class="flex flex-col space-y-4 p-5">
 
@@ -1641,7 +1739,8 @@
 
                 <div class="w-full sm:w-[540px] md:w-[700px] lg:w-1/2 xl:w-3/5 mx-auto flex space-y-4 flex-col">
                     <p class="font-semibold text-primary">OUR VISION</p>
-                    <p class="text-xl sm:text-2xl font-semibold">OUR VISION IS SIMPLE - WE EXIST TO ACCELERATE OUR CUSTOMERS’
+                    <p class="text-xl sm:text-2xl font-semibold">OUR VISION IS SIMPLE - WE EXIST TO ACCELERATE OUR
+                        CUSTOMERS’
                         PROGRESS</p>
                     <p>we design and deliver our customers’ digital transformation by bringing
                         together
@@ -1684,21 +1783,26 @@
 
                 <p class="text-xl sm:text-2xl font-semibold mx-auto">MEET WITH OUR TEAM</p>
 
-                <div class="w-full sm:w-[540px] md:w-[700px] lg:w-full mx-auto flex space-x-5 overflow-x-scroll lg:overflow-hidden scroll-smooth custom-scrollbar py-2 rounded-md" id="our-team-member">
-                    
+                <div class="w-full sm:w-[540px] md:w-[700px] lg:w-full mx-auto flex space-x-5 overflow-x-scroll lg:overflow-hidden scroll-smooth custom-scrollbar py-2 rounded-md"
+                    id="our-team-member">
 
-                    <div class="flex-none w-full xs:w-[47%] lg:w-[23%] relative duration-300 group p-2 hover:p-0">
+
+                    <div
+                        class="overflow-y-hidden flex-none w-full xs:w-[47%] lg:w-[23%] relative duration-300 group p-2 hover:p-0 h-fit">
                         <img src="img/team-1.jpg" class="rounded-md w-full">
 
-                        <div class=" duration-200 absolute -bottom-16 left-1/2 group-hover:bottom-5 -translate-x-1/2 flex space-x-5 z-10">
+                        <div
+                            class=" duration-200 absolute -bottom-32 left-1/2 group-hover:bottom-5 -translate-x-1/2 flex space-x-5 z-10">
                             <i
-                            class="fa-brands fa-facebook-f bg-[#3b5998] cursor-pointer rounded p-2 text-xs text-center text-white"></i>
-                        <i
-                            class="fa-brands fa-twitter bg-[#00acee] cursor-pointer rounded p-2 text-xs text-center text-white"></i>
-                        <i
-                            class="fa-brands fa-instagram bg-[#d53983] cursor-pointer rounded p-2 text-xs text-center text-white"></i>
+                                class="fa-brands fa-facebook-f bg-[#3b5998] cursor-pointer rounded p-2 text-xs text-center text-white"></i>
+                            <i
+                                class="fa-brands fa-twitter bg-[#00acee] cursor-pointer rounded p-2 text-xs text-center text-white"></i>
+                            <i
+                                class="fa-brands fa-instagram bg-[#d53983] cursor-pointer rounded p-2 text-xs text-center text-white"></i>
                         </div>
-                        <div class="opacity-0 absolute top-0 left-0 w-full h-full group-hover:bg-black/50 z-0 duration-300 group-hover:opacity-100 flex justify-center items-center">
+
+                        <div
+                            class="opacity-0 absolute top-0 left-0 w-full h-full group-hover:bg-black/50 z-0 duration-300 group-hover:opacity-100 flex justify-center items-center">
                             <div class="flex flex-col space-y-0 justify-center items-center text-white">
                                 <p class="font-semibold text-lg">Jane Cooper</p>
                                 <p class="text-base">Founder</p>
@@ -1706,20 +1810,23 @@
                         </div>
                     </div>
 
-                    
-                    <div class="flex-none w-full xs:w-[47%] lg:w-[23%] relative duration-300 group p-2 hover:p-0">
+
+                    <div
+                        class="overflow-y-hidden flex-none w-full xs:w-[47%] lg:w-[23%] relative duration-300 group p-2 hover:p-0">
                         <img src="img/team-2.jpg" class="rounded-md w-full">
 
-                        <div class=" duration-200 absolute -bottom-16 left-1/2 group-hover:bottom-5 -translate-x-1/2 flex space-x-5 z-10">
+                        <div
+                            class=" duration-200 absolute -bottom-16 left-1/2 group-hover:bottom-5 -translate-x-1/2 flex space-x-5 z-10">
                             <i
-                            class="fa-brands fa-facebook-f bg-[#3b5998] cursor-pointer rounded p-2 text-xs text-center text-white"></i>
-                        <i
-                            class="fa-brands fa-twitter bg-[#00acee] cursor-pointer rounded p-2 text-xs text-center text-white"></i>
-                        <i
-                            class="fa-brands fa-instagram bg-[#d53983] cursor-pointer rounded p-2 text-xs text-center text-white"></i>
+                                class="fa-brands fa-facebook-f bg-[#3b5998] cursor-pointer rounded p-2 text-xs text-center text-white"></i>
+                            <i
+                                class="fa-brands fa-twitter bg-[#00acee] cursor-pointer rounded p-2 text-xs text-center text-white"></i>
+                            <i
+                                class="fa-brands fa-instagram bg-[#d53983] cursor-pointer rounded p-2 text-xs text-center text-white"></i>
                         </div>
 
-                        <div class="opacity-0 absolute top-0 left-0 w-full h-full group-hover:bg-black/50 z-0 duration-300 group-hover:opacity-100 flex justify-center items-center">
+                        <div
+                            class="opacity-0 absolute top-0 left-0 w-full h-full group-hover:bg-black/50 z-0 duration-300 group-hover:opacity-100 flex justify-center items-center">
                             <div class="flex flex-col space-y-0 justify-center items-center text-white">
                                 <p class="font-semibold text-lg">Esther Howard</p>
                                 <p class="text-base">Team Leader</p>
@@ -1727,19 +1834,22 @@
                         </div>
                     </div>
 
-                    <div class="flex-none w-full xs:w-[47%] lg:w-[23%] relative duration-300 group p-2 hover:p-0">
+                    <div
+                        class="overflow-y-hidden flex-none w-full xs:w-[47%] lg:w-[23%] relative duration-300 group p-2 hover:p-0">
                         <img src="img/team-3.jpg" class="rounded-md w-full">
 
-                        <div class=" duration-200 absolute -bottom-16 left-1/2 group-hover:bottom-5 -translate-x-1/2 flex space-x-5 z-10">
+                        <div
+                            class=" duration-200 absolute -bottom-16 left-1/2 group-hover:bottom-5 -translate-x-1/2 flex space-x-5 z-10">
                             <i
-                            class="fa-brands fa-facebook-f bg-[#3b5998] cursor-pointer rounded p-2 text-xs text-center text-white"></i>
-                        <i
-                            class="fa-brands fa-twitter bg-[#00acee] cursor-pointer rounded p-2 text-xs text-center text-white"></i>
-                        <i
-                            class="fa-brands fa-instagram bg-[#d53983] cursor-pointer rounded p-2 text-xs text-center text-white"></i>
+                                class="fa-brands fa-facebook-f bg-[#3b5998] cursor-pointer rounded p-2 text-xs text-center text-white"></i>
+                            <i
+                                class="fa-brands fa-twitter bg-[#00acee] cursor-pointer rounded p-2 text-xs text-center text-white"></i>
+                            <i
+                                class="fa-brands fa-instagram bg-[#d53983] cursor-pointer rounded p-2 text-xs text-center text-white"></i>
                         </div>
 
-                        <div class="opacity-0 absolute top-0 left-0 w-full h-full group-hover:bg-black/50 z-0 duration-300 group-hover:opacity-100 flex justify-center items-center">
+                        <div
+                            class="opacity-0 absolute top-0 left-0 w-full h-full group-hover:bg-black/50 z-0 duration-300 group-hover:opacity-100 flex justify-center items-center">
                             <div class="flex flex-col space-y-0 justify-center items-center text-white">
                                 <p class="font-semibold text-lg">Arlene McCoy</p>
                                 <p class="text-base">Marketing Officer</p>
@@ -1747,19 +1857,22 @@
                         </div>
                     </div>
 
-                    <div class="flex-none w-full xs:w-[47%] lg:w-[23%] relative duration-300 group p-2 hover:p-0">
+                    <div
+                        class="overflow-y-hidden flex-none w-full xs:w-[47%] lg:w-[23%] relative duration-300 group p-2 hover:p-0">
                         <img src="img/team-4.jpg" class="rounded-md w-full">
 
-                        <div class=" duration-200 absolute -bottom-16 left-1/2 group-hover:bottom-5 -translate-x-1/2 flex space-x-5 z-10">
+                        <div
+                            class=" duration-200 absolute -bottom-16 left-1/2 group-hover:bottom-5 -translate-x-1/2 flex space-x-5 z-10">
                             <i
-                            class="fa-brands fa-facebook-f bg-[#3b5998] cursor-pointer rounded p-2 text-xs text-center text-white"></i>
-                        <i
-                            class="fa-brands fa-twitter bg-[#00acee] cursor-pointer rounded p-2 text-xs text-center text-white"></i>
-                        <i
-                            class="fa-brands fa-instagram bg-[#d53983] cursor-pointer rounded p-2 text-xs text-center text-white"></i>
+                                class="fa-brands fa-facebook-f bg-[#3b5998] cursor-pointer rounded p-2 text-xs text-center text-white"></i>
+                            <i
+                                class="fa-brands fa-twitter bg-[#00acee] cursor-pointer rounded p-2 text-xs text-center text-white"></i>
+                            <i
+                                class="fa-brands fa-instagram bg-[#d53983] cursor-pointer rounded p-2 text-xs text-center text-white"></i>
                         </div>
 
-                        <div class="opacity-0 absolute top-0 left-0 w-full h-full group-hover:bg-black/50 z-0 duration-300 group-hover:opacity-100 flex justify-center items-center">
+                        <div
+                            class="opacity-0 absolute top-0 left-0 w-full h-full group-hover:bg-black/50 z-0 duration-300 group-hover:opacity-100 flex justify-center items-center">
                             <div class="flex flex-col space-y-0 justify-center items-center text-white">
                                 <p class="font-semibold text-lg">Kristin Wastson</p>
                                 <p class="text-base">Senior Officer</p>
@@ -1776,32 +1889,33 @@
 
                 <p class="text-xl sm:text-2xl font-semibold mx-auto">OUR PARTNERS</p>
 
-                <div class="w-full sm:w-[540px] md:w-[700px] lg:w-full mx-auto flex space-x-5 overflow-x-scroll lg:overflow-hidden scroll-smooth custom-scrollbar py-2 rounded-md" id="our-brand-partners">
-                    
+                <div class="w-full sm:w-[540px] md:w-[700px] lg:w-full mx-auto flex space-x-5 overflow-x-scroll lg:overflow-hidden scroll-smooth custom-scrollbar py-2 rounded-md"
+                    id="our-brand-partners">
+
                     <div class="flex-none w-1/2 sm:w-1/3 lg:w-[15%]">
                         <img src="img/brand-1.png" alt="">
                     </div>
-                 
+
                     <div class="flex-none w-1/2 sm:w-1/3 lg:w-[15%]">
                         <img src="img/brand-2.png" alt="">
                     </div>
-                 
+
                     <div class="flex-none w-1/2 sm:w-1/3 lg:w-[15%]">
                         <img src="img/brand-3.png" alt="">
                     </div>
-                 
+
                     <div class="flex-none w-1/2 sm:w-1/3 lg:w-[15%]">
                         <img src="img/brand-4.png" alt="">
                     </div>
-                 
+
                     <div class="flex-none w-1/2 sm:w-1/3 lg:w-[15%]">
                         <img src="img/brand-1.png" alt="">
                     </div>
-                 
+
                     <div class="flex-none w-1/2 sm:w-1/3 lg:w-[15%]">
                         <img src="img/brand-2.png" alt="">
                     </div>
-                 
+
 
 
                 </div>
@@ -1830,7 +1944,8 @@
                 </div>
 
                 <button
-                    class="w-fit bg-primary hover:bg-transparent text-white hover:text-primary border border-primary rounded-md cursor-pointer duration-300 text-base py-2 px-5 uppercase font-semibold">Track Order</button>
+                    class="w-fit bg-primary hover:bg-transparent text-white hover:text-primary border border-primary rounded-md cursor-pointer duration-300 text-base py-2 px-5 uppercase font-semibold">Track
+                    Order</button>
 
                 <div class="w-full text-center py-2 bg-[#28a745] text-2xl font-semibold text-white rounded">
                     DELIVERED
@@ -1842,18 +1957,20 @@
                         <div class="absolute top-[10%] left-1/2 -translate-x-1/2">
                             <div class="relative">
                                 <i class="fa-solid fa-check bg-[#28a745]   rounded-full p-2 text-white"></i>
-                                <div class="text-base text-black bg-gray-200 absolute top-1/2 -translate-y-1/2 -left-3 pl-[80px] py-4 rounded right flex flex-col space-y-2 items-start w-[300px]">
+                                <div
+                                    class="text-base text-black bg-gray-200 absolute top-1/2 -translate-y-1/2 -left-3 pl-[80px] py-4 rounded right flex flex-col space-y-2 items-start w-[300px]">
                                     <p class="font-medium">01. Order Placement</p>
                                     <p>30 january, 2021, 8:37 AM</p>
                                 </div>
                             </div>
                         </div>
 
-                        
+
                         <div class="absolute top-[33%] left-1/2 -translate-x-1/2">
                             <div class="relative">
                                 <i class="fa-solid fa-check bg-[#28a745] rounded-full p-2 text-white"></i>
-                                <div class="text-base text-black bg-gray-200 absolute top-1/2 -translate-y-1/2 -left-3 md:-left-64 pl-[80px] md:pl-5 py-4 rounded left flex flex-col space-y-2 items-start w-[300px]">
+                                <div
+                                    class="text-base text-black bg-gray-200 absolute top-1/2 -translate-y-1/2 -left-3 md:-left-64 pl-[80px] md:pl-5 py-4 rounded left flex flex-col space-y-2 items-start w-[300px]">
                                     <p class="font-medium">02. Processingt</p>
                                     <p>30 january, 2021, 8:37 AM</p>
                                 </div>
@@ -1863,7 +1980,8 @@
                         <div class="absolute top-[56%] left-1/2 -translate-x-1/2">
                             <div class="relative">
                                 <i class="fa-solid fa-check bg-[#28a745]   rounded-full p-2 text-white"></i>
-                                <div class="text-base text-black bg-gray-200 absolute top-1/2 -translate-y-1/2 -left-3 pl-[80px] py-4 rounded right flex flex-col space-y-2 items-start w-[300px]">
+                                <div
+                                    class="text-base text-black bg-gray-200 absolute top-1/2 -translate-y-1/2 -left-3 pl-[80px] py-4 rounded right flex flex-col space-y-2 items-start w-[300px]">
                                     <p class="font-medium">03. Shipping</p>
                                     <p>30 january, 2021, 8:37 AM</p>
                                 </div>
@@ -1873,7 +1991,8 @@
                         <div class="absolute top-[079%] left-1/2 -translate-x-1/2">
                             <div class="relative">
                                 <i class="fa-solid fa-check bg-[#ffc107] rounded-full p-2 text-white"></i>
-                                <div class="text-base text-black bg-gray-200 absolute top-1/2 -translate-y-1/2 -left-3 md:-left-64 pl-[80px] md:pl-5 py-4 rounded left flex flex-col space-y-2 items-start w-[300px]">
+                                <div
+                                    class="text-base text-black bg-gray-200 absolute top-1/2 -translate-y-1/2 -left-3 md:-left-64 pl-[80px] md:pl-5 py-4 rounded left flex flex-col space-y-2 items-start w-[300px]">
                                     <p class="font-medium">04. delivery</p>
                                     <p>30 january, 2021, 8:37 AM</p>
                                 </div>
@@ -1901,57 +2020,73 @@
 
             <div class="flex flex-col space-y-8">
                 <div class="flex flex-col gap-5">
-                <h1 class="text-4xl font-semibold">F.A.Q</h1>
-                <p class="text-base">Can’t find the answer you’re looking for? We’ve shared some
-of<br class="hidden sm:block"> your most frequently asked questions to help you out!</p>
+                    <h1 class="text-4xl font-semibold">F.A.Q</h1>
+                    <p class="text-base">Can’t find the answer you’re looking for? We’ve shared some
+                        of<br class="hidden sm:block"> your most frequently asked questions to help you out!</p>
                 </div>
 
                 <div class="flex flex-col space-y-3">
                     <h2 class="text-xl font-semibold">Shipping Information</h2>
                     <div class="flex flex-col border border-gray-300 w-full lg:w-3/4 text-base text-gray">
 
-                        <div id="information-q-1" class="border-b border-gray-300 flex flex-col duration-500 overflow-hidden gap-4 bg-slate-100 h-16">
-                            <div class="flex justify-between px-3 items-center py-5 cursor-pointer" onclick="openQuestionAns(this,'information-q-')">
+                        <div id="information-q-1"
+                            class="border-b border-gray-300 flex flex-col duration-500 overflow-hidden gap-4 bg-slate-100 h-16">
+                            <div class="flex justify-between px-3 items-center py-5 cursor-pointer"
+                                onclick="openQuestionAns(this,'information-q-')">
                                 <p>How will my parcel be deliverd?</p>
                                 <i class="fa-solid fa-plus "></i>
                             </div>
-                
+
                             <h2 class="px-3">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book.
                             </h2>
                         </div>
 
-                        
-                        <div id="information-q-2" class="border-b border-gray-300 flex flex-col duration-500 overflow-hidden gap-4 bg-slate-100 h-16">
-                            <div class="flex justify-between px-3 items-center py-5 cursor-pointer" onclick="openQuestionAns(this,'information-q-')">
+
+                        <div id="information-q-2"
+                            class="border-b border-gray-300 flex flex-col duration-500 overflow-hidden gap-4 bg-slate-100 h-16">
+                            <div class="flex justify-between px-3 items-center py-5 cursor-pointer"
+                                onclick="openQuestionAns(this,'information-q-')">
                                 <p>Do I pay for delivery?</p>
                                 <i class="fa-solid fa-plus "></i>
                             </div>
-                
+
                             <h2 class="px-3">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book.
                             </h2>
                         </div>
 
-                        <div id="information-q-3" class="border-b border-gray-300 flex flex-col duration-500 overflow-hidden gap-4 bg-slate-100 h-16">
-                            <div class="flex justify-between px-3 items-center py-5 cursor-pointer" onclick="openQuestionAns(this,'information-q-')">
+                        <div id="information-q-3"
+                            class="border-b border-gray-300 flex flex-col duration-500 overflow-hidden gap-4 bg-slate-100 h-16">
+                            <div class="flex justify-between px-3 items-center py-5 cursor-pointer"
+                                onclick="openQuestionAns(this,'information-q-')">
                                 <p>How will my parcel be deliverd?</p>
                                 <i class="fa-solid fa-plus "></i>
                             </div>
-                
+
                             <h2 class="px-3">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book.
                             </h2>
                         </div>
 
-                        <div id="information-q-4" class="flex flex-col duration-500 overflow-hidden gap-4 bg-slate-100 h-16">
-                            <div class="flex justify-between px-3 items-center py-5 cursor-pointer" onclick="openQuestionAns(this,'information-q-')">
+                        <div id="information-q-4"
+                            class="flex flex-col duration-500 overflow-hidden gap-4 bg-slate-100 h-16">
+                            <div class="flex justify-between px-3 items-center py-5 cursor-pointer"
+                                onclick="openQuestionAns(this,'information-q-')">
                                 <p>Do I pay for delivery?</p>
                                 <i class="fa-solid fa-plus "></i>
                             </div>
-                
+
                             <h2 class="px-3">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book.
                             </h2>
                         </div>
 
@@ -1959,52 +2094,68 @@ of<br class="hidden sm:block"> your most frequently asked questions to help you 
                     </div>
                 </div>
 
-                 <div class="flex flex-col space-y-3">
+                <div class="flex flex-col space-y-3">
                     <h2 class="text-xl font-semibold">Orders And Returns</h2>
                     <div class="flex flex-col border border-gray-300 w-full lg:w-3/4 text-base text-gray-800">
 
-                        <div id="order-q-1" class="border-b border-gray-300 flex flex-col duration-500 overflow-hidden gap-4 bg-slate-100 h-16">
-                            <div class="flex justify-between px-3 items-center py-5 cursor-pointer"  onclick="openQuestionAns(this,'order-q-')">
+                        <div id="order-q-1"
+                            class="border-b border-gray-300 flex flex-col duration-500 overflow-hidden gap-4 bg-slate-100 h-16">
+                            <div class="flex justify-between px-3 items-center py-5 cursor-pointer"
+                                onclick="openQuestionAns(this,'order-q-')">
                                 <p>How can I return on item?</p>
                                 <i class="fa-solid fa-plus "></i>
                             </div>
-                
+
                             <h2 class="px-3">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book.
                             </h2>
                         </div>
 
-                        
-                        <div id="order-q-2" class="border-b border-gray-300 flex flex-col duration-500 overflow-hidden gap-4 bg-slate-100 h-16 py-5 cursor-pointer">
-                            <div class="flex justify-between px-3 items-center" onclick="openQuestionAns(this,'order-q-')">
+
+                        <div id="order-q-2"
+                            class="border-b border-gray-300 flex flex-col duration-500 overflow-hidden gap-4 bg-slate-100 h-16 py-5 cursor-pointer">
+                            <div class="flex justify-between px-3 items-center"
+                                onclick="openQuestionAns(this,'order-q-')">
                                 <p>I haven’t recived my order</p>
                                 <i class="fa-solid fa-plus "></i>
                             </div>
-                
+
                             <h2 class="px-3">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book.
                             </h2>
                         </div>
 
-                        <div id="order-q-3" class="border-b border-gray-300 flex flex-col duration-500 overflow-hidden gap-4 bg-slate-100 h-16 py-5 cursor-pointer">
-                            <div class="flex justify-between px-3 items-center" onclick="openQuestionAns(this,'order-q-')">
+                        <div id="order-q-3"
+                            class="border-b border-gray-300 flex flex-col duration-500 overflow-hidden gap-4 bg-slate-100 h-16 py-5 cursor-pointer">
+                            <div class="flex justify-between px-3 items-center"
+                                onclick="openQuestionAns(this,'order-q-')">
                                 <p>Tracking my order</p>
                                 <i class="fa-solid fa-plus "></i>
                             </div>
-                
+
                             <h2 class="px-3">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book.
                             </h2>
                         </div>
 
-                        <div id="order-q-4" class="flex flex-col duration-500 overflow-hidden gap-4 bg-slate-100 h-16 py-5 cursor-pointer">
-                            <div class="flex justify-between px-3 items-center" onclick="openQuestionAns(this,'order-q-')">
+                        <div id="order-q-4"
+                            class="flex flex-col duration-500 overflow-hidden gap-4 bg-slate-100 h-16 py-5 cursor-pointer">
+                            <div class="flex justify-between px-3 items-center"
+                                onclick="openQuestionAns(this,'order-q-')">
                                 <p>How will my parcel be deliverd?</p>
                                 <i class="fa-solid fa-plus "></i>
                             </div>
-                
+
                             <h2 class="px-3">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book.
                             </h2>
                         </div>
 
@@ -2016,51 +2167,67 @@ of<br class="hidden sm:block"> your most frequently asked questions to help you 
                     <h2 class="text-xl font-semibold">Payments</h2>
                     <div class="flex flex-col border border-gray-300 w-full lg:w-3/4 text-base text-gray-800">
 
-                        <div id="payment-q-1" class="border-b border-gray-300 flex flex-col duration-500 overflow-hidden gap-4 bg-slate-100 h-16">
-                            <div class="flex justify-between px-3 items-center py-5 cursor-pointer" onclick="openQuestionAns(this,'payment-q-')">
+                        <div id="payment-q-1"
+                            class="border-b border-gray-300 flex flex-col duration-500 overflow-hidden gap-4 bg-slate-100 h-16">
+                            <div class="flex justify-between px-3 items-center py-5 cursor-pointer"
+                                onclick="openQuestionAns(this,'payment-q-')">
                                 <p>What payment types can i use?</p>
                                 <i class="fa-solid fa-plus "></i>
                             </div>
-                
+
                             <h2 class="px-3">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book.
                             </h2>
                         </div>
 
-                        
-                        <div id="payment-q-2" class="border-b border-gray-300 flex flex-col duration-500 overflow-hidden gap-4 bg-slate-100 h-16">
-                            <div class="flex justify-between px-3 items-center py-5 cursor-pointer" onclick="openQuestionAns(this,'payment-q-')">
+
+                        <div id="payment-q-2"
+                            class="border-b border-gray-300 flex flex-col duration-500 overflow-hidden gap-4 bg-slate-100 h-16">
+                            <div class="flex justify-between px-3 items-center py-5 cursor-pointer"
+                                onclick="openQuestionAns(this,'payment-q-')">
                                 <p>Can I pay by gift Card?
                                 </p>
                                 <i class="fa-solid fa-plus "></i>
                             </div>
-                
+
                             <h2 class="px-3">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book.
                             </h2>
                         </div>
 
-                        <div id="payment-q-3" class="border-b border-gray-300 flex flex-col duration-500 overflow-hidden gap-4 bg-slate-100 h-16">
-                            <div class="flex justify-between px-3 items-center py-5 cursor-pointer" onclick="openQuestionAns(this,'payment-q-')">
+                        <div id="payment-q-3"
+                            class="border-b border-gray-300 flex flex-col duration-500 overflow-hidden gap-4 bg-slate-100 h-16">
+                            <div class="flex justify-between px-3 items-center py-5 cursor-pointer"
+                                onclick="openQuestionAns(this,'payment-q-')">
                                 <p>I can’t make a payment
                                 </p>
                                 <i class="fa-solid fa-plus "></i>
                             </div>
-                
+
                             <h2 class="px-3">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book.
                             </h2>
                         </div>
 
-                        <div id="payment-q-4" class="flex flex-col duration-500 overflow-hidden gap-4 bg-slate-100 h-16">
-                            <div class="flex justify-between px-3 items-center py-5 cursor-pointer" onclick="openQuestionAns(this,'payment-q-')">
+                        <div id="payment-q-4"
+                            class="flex flex-col duration-500 overflow-hidden gap-4 bg-slate-100 h-16">
+                            <div class="flex justify-between px-3 items-center py-5 cursor-pointer"
+                                onclick="openQuestionAns(this,'payment-q-')">
                                 <p>Has my payment gone though?
                                 </p>
                                 <i class="fa-solid fa-plus "></i>
                             </div>
-                
+
                             <h2 class="px-3">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book.
                             </h2>
                         </div>
 
@@ -2070,7 +2237,7 @@ of<br class="hidden sm:block"> your most frequently asked questions to help you 
             </div>
 
         </div>
-        
+
     </section>
     <!-- FAQ section end -->
 
@@ -2089,7 +2256,8 @@ of<br class="hidden sm:block"> your most frequently asked questions to help you 
                 <img src="img/404.svg">
                 <p class="text-xl sm:text-2xl font-semibold">THE PAGE YOU'VE REQUESTED IS NOT AVAILABLE</p>
                 <Button onclick="changePage('home-page')"
-                        class="bg-primary px-4 py-2 border border-primary hover:bg-transparent text-white hover:text-primary rounded-md duration-300 font-semibold">Back To Home </Button>
+                    class="bg-primary px-4 py-2 border border-primary hover:bg-transparent text-white hover:text-primary rounded-md duration-300 font-semibold">Back
+                    To Home </Button>
             </div>
         </div>
     </section>
@@ -2106,12 +2274,11 @@ of<br class="hidden sm:block"> your most frequently asked questions to help you 
                 <p class="cursor-pointer text-black">Checkout</p>
             </div>
         </div>
-        
+
         <div
             class="w-full mt-10 sm:px-16 lg:px-7 xl:px-20 px-3 xs:px-10 flex flex-col space-y-10 md:space-y-0 md:flex-row md:space-x-5">
 
-            <div
-                class="w-full lg:w-3/5 xl:w-2/3 flex flex-col space-y-3 mx-auto rounded-lg">
+            <div class="w-full lg:w-3/5 xl:w-2/3 flex flex-col space-y-3 mx-auto rounded-lg">
 
                 <div class="w-full bg-black/20 px-5 py-3 rounded">
                     <p class="font-semibold">Billing Details</p>
@@ -2192,44 +2359,20 @@ of<br class="hidden sm:block"> your most frequently asked questions to help you 
                     <input type="text" id="EmailAddress2"
                         class="border border-gray-300 focus:border-gray-400 focus:outline-none focus:ring-gray-400 rounded px-3 py-1 cursor-pointer h-12">
                 </div>
-                
+
             </div>
 
-            <div
-                class="w-full lg:w-2/5 xl:w-1/3 flex flex-col space-y-5 mx-auto rounded-lg">
+            <div class="w-full lg:w-2/5 xl:w-1/3 flex flex-col space-y-5 mx-auto rounded-lg">
 
                 <div class="w-full bg-black/20 px-5 py-3 rounded">
                     <p class="font-semibold">Your Order</p>
                 </div>
 
                 <div class="flex flex-col space-y-4 border border-gray-300 p-5 rounded">
-   
+
                     <h2 class="text-lg font-medium border-b border-gray-300 pb-3">OUR STORE</h2>
 
                     <div class="flex flex-col space-y-5 border-b border-gray-300 pb-3">
-                      
-                        <div class="flex justify-between">
-                            <div class="flex space-x-5">
-                                <div class="flex flex-col space-y-1">
-                                    <p class="text-base font-medium">Beigh Knitted Shoes</p>
-                                    <p class="text-sm">Size: M</p>
-                                </div>
-                                <p class="font-medium text-base">x1</p>
-                            </div>
-                            <p class="font-medium">$84.00</p>
-                        </div>
-
-                        
-                        <div class="flex justify-between">
-                            <div class="flex space-x-5">
-                                <div class="flex flex-col space-y-1">
-                                    <p class="text-base font-medium">Beigh Knitted Shoes</p>
-                                    <p class="text-sm">Size: M</p>
-                                </div>
-                                <p class="font-medium text-base">x1</p>
-                            </div>
-                            <p class="font-medium">$84.00</p>
-                        </div>
 
                         <div class="flex justify-between">
                             <div class="flex space-x-5">
@@ -2241,7 +2384,30 @@ of<br class="hidden sm:block"> your most frequently asked questions to help you 
                             </div>
                             <p class="font-medium">$84.00</p>
                         </div>
-                        
+
+
+                        <div class="flex justify-between">
+                            <div class="flex space-x-5">
+                                <div class="flex flex-col space-y-1">
+                                    <p class="text-base font-medium">Beigh Knitted Shoes</p>
+                                    <p class="text-sm">Size: M</p>
+                                </div>
+                                <p class="font-medium text-base">x1</p>
+                            </div>
+                            <p class="font-medium">$84.00</p>
+                        </div>
+
+                        <div class="flex justify-between">
+                            <div class="flex space-x-5">
+                                <div class="flex flex-col space-y-1">
+                                    <p class="text-base font-medium">Beigh Knitted Shoes</p>
+                                    <p class="text-sm">Size: M</p>
+                                </div>
+                                <p class="font-medium text-base">x1</p>
+                            </div>
+                            <p class="font-medium">$84.00</p>
+                        </div>
+
                         <div class="flex justify-between font-medium">
                             <p>SUBTOTAL</p>
                             <p>$84.00</p>
@@ -2263,13 +2429,16 @@ of<br class="hidden sm:block"> your most frequently asked questions to help you 
                     </div>
 
                     <div class="flex space-x-3 items-center">
-                        <input type="checkbox" id="agr" class="text-primary border-2 rounded border-primary focus:border-primary focus:ring-0 mt-1">
-                        <label for="agr">Agree to our <span class="text-primary cursor-pointer">terms & conditions</span></label>
+                        <input type="checkbox" id="agr"
+                            class="text-primary border-2 rounded border-primary focus:border-primary focus:ring-0 mt-1">
+                        <label for="agr">Agree to our <span class="text-primary cursor-pointer">terms &
+                                conditions</span></label>
                     </div>
 
                     <button
-                        class="bg-primary px-4 py-2 border border-primary hover:bg-transparent text-white hover:text-primary rounded-md duration-300 font-semibold w-full">PLACE ORDER</button>
-                    
+                        class="bg-primary px-4 py-2 border border-primary hover:bg-transparent text-white hover:text-primary rounded-md duration-300 font-semibold w-full">PLACE
+                        ORDER</button>
+
                 </div>
             </div>
         </div>
@@ -2278,8 +2447,8 @@ of<br class="hidden sm:block"> your most frequently asked questions to help you 
 
 
 
-     <!-- payment section start -->
-     <section class="hidden" id="payment-page">
+    <!-- payment section start -->
+    <section class="hidden" id="payment-page">
 
         <div class="w-full lg:px-7 px-3 xs:px-10 sm:px-16 xl:px-20 mt-5">
             <div class="flex text-primary items-center space-x-2 mb-5">
@@ -2288,12 +2457,11 @@ of<br class="hidden sm:block"> your most frequently asked questions to help you 
                 <p class="cursor-pointer text-black">Payment</p>
             </div>
         </div>
-        
+
         <div
             class="w-full mt-10 sm:px-16 lg:px-7 xl:px-20 px-3 xs:px-10 flex flex-col space-y-10 lg:space-y-0 lg:flex-row lg:space-x-5">
 
-            <div
-                class="w-full lg:w-3/5 xl:w-2/3 flex flex-col space-y-5 mx-auto rounded-lg">
+            <div class="w-full lg:w-3/5 xl:w-2/3 flex flex-col space-y-5 mx-auto rounded-lg">
 
                 <div class="w-full bg-black/20 px-5 py-3 rounded">
                     <p class="font-semibold">Select Payment Method</p>
@@ -2301,27 +2469,33 @@ of<br class="hidden sm:block"> your most frequently asked questions to help you 
 
                 <div class="flex space-x-2 xs:space-x-5">
 
-                    <div class="flex flex-col space-y-3 items-center border border-primary w-1/3 sm:w-40 xs:px-3 py-3  rounded-md justify-center relative text cursor-pointer" onclick="selectPaymentMethod(this,'credit-payment-section')" id="credit-button">
+                    <div class="flex flex-col space-y-3 items-center border border-primary w-1/3 sm:w-40 xs:px-3 py-3  rounded-md justify-center relative text cursor-pointer"
+                        onclick="selectPaymentMethod(this,'credit-payment-section')" id="credit-button">
                         <img src="img/credit-card.png" alt="">
                         <p class=" text-center">Credit Card</p>
-                        <div class="w-5 h-5 bg-primary text-white rounded-full flex justify-center items-center absolute -top-5 -right-2">
+                        <div
+                            class="w-5 h-5 bg-primary text-white rounded-full flex justify-center items-center absolute -top-5 -right-2">
                             <i class="fa-solid fa-check text-xs"></i>
                         </div>
                     </div>
 
-                    
-                    <div class="flex flex-col space-y-3 items-center border border-gray-300 w-1/3 sm:w-40 xs:px-3 py-3  rounded-md justify-center relative text cursor-pointer" onclick="selectPaymentMethod(this,'paypal-payment-section')" id="paypal-button">
+
+                    <div class="flex flex-col space-y-3 items-center border border-gray-300 w-1/3 sm:w-40 xs:px-3 py-3  rounded-md justify-center relative text cursor-pointer"
+                        onclick="selectPaymentMethod(this,'paypal-payment-section')" id="paypal-button">
                         <img src="img/paypal.png">
                         <p class="pt-4 text-center">Paypal</p>
-                        <div class="w-5 h-5 bg-primary text-white rounded-full justify-center items-center absolute -top-5 -right-2 hidden">
+                        <div
+                            class="w-5 h-5 bg-primary text-white rounded-full justify-center items-center absolute -top-5 -right-2 hidden">
                             <i class="fa-solid fa-check text-xs"></i>
                         </div>
                     </div>
 
-                    <div class="flex flex-col space-y-3 items-center border border-gray-300 w-1/3 sm:w-40 sm:px-3 py-3  rounded-md justify-center relative text cursor-pointer" onclick="selectPaymentMethod(this,'cash-payment-section')" id="cash-button">
+                    <div class="flex flex-col space-y-3 items-center border border-gray-300 w-1/3 sm:w-40 sm:px-3 py-3  rounded-md justify-center relative text cursor-pointer"
+                        onclick="selectPaymentMethod(this,'cash-payment-section')" id="cash-button">
                         <img src="img/cash-on.png" alt="">
                         <p class=" text-center">Cash on Delivery</p>
-                        <div class="w-5 h-5 bg-primary text-white rounded-full  justify-center items-center absolute -top-5 -right-2 hidden">
+                        <div
+                            class="w-5 h-5 bg-primary text-white rounded-full  justify-center items-center absolute -top-5 -right-2 hidden">
                             <i class="fa-solid fa-check text-xs"></i>
                         </div>
                     </div>
@@ -2358,19 +2532,21 @@ of<br class="hidden sm:block"> your most frequently asked questions to help you 
                         <div class="w-full lg:w-1/2 flex flex-col space-y-1">
                             <label for="Expiration Date" class="cursor-pointer">Expiration Date</label>
                             <input type="text" id="Expiration Date"
-                                class="border border-gray-300 focus:border-gray-400 focus:outline-none focus:ring-gray-400 rounded px-3 py-1 cursor-pointer h-12" placeholder="MM/YY">
+                                class="border border-gray-300 focus:border-gray-400 focus:outline-none focus:ring-gray-400 rounded px-3 py-1 cursor-pointer h-12"
+                                placeholder="MM/YY">
                         </div>
-    
+
                         <div class="w-full lg:w-1/2 flex flex-col space-y-1">
                             <label for="CVV" class="cursor-pointer">CVV</label>
                             <input type="text" id="CVV"
                                 class="border border-gray-300 focus:border-gray-400 focus:outline-none focus:ring-gray-400 rounded px-3 py-1 cursor-pointer h-12">
                         </div>
-    
+
                     </div>
 
                     <button
-                        class="bg-primary px-4 py-2 border border-primary hover:bg-transparent text-white hover:text-primary rounded-md duration-300 font-semibold w-fit">PAY NOW</button>
+                        class="bg-primary px-4 py-2 border border-primary hover:bg-transparent text-white hover:text-primary rounded-md duration-300 font-semibold w-fit">PAY
+                        NOW</button>
                 </div>
                 <!-- payment by credit cart -->
 
@@ -2388,7 +2564,8 @@ of<br class="hidden sm:block"> your most frequently asked questions to help you 
                     <div class="flex flex-col space-y-3 mx-auto items-center">
                         <p>Payment using your paypal</p>
                         <button
-                        class="bg-primary px-4 py-2 border border-primary hover:bg-transparent text-white hover:text-primary rounded-md duration-300 font-semibold w-fit">PAY NOW</button>
+                            class="bg-primary px-4 py-2 border border-primary hover:bg-transparent text-white hover:text-primary rounded-md duration-300 font-semibold w-fit">PAY
+                            NOW</button>
                     </div>
                 </div>
                 <!-- payment by paypal -->
@@ -2407,48 +2584,25 @@ of<br class="hidden sm:block"> your most frequently asked questions to help you 
                     <div class="flex flex-col space-y-3 mx-auto items-center text-center">
                         <p>you can pay in cash to our courier when you <br>receive the goods at your doorstep.</p>
                         <button
-                        class="bg-primary px-4 py-2 border border-primary hover:bg-transparent text-white hover:text-primary rounded-md duration-300 font-semibold w-fit">COMFIRM ORDER</button>
+                            class="bg-primary px-4 py-2 border border-primary hover:bg-transparent text-white hover:text-primary rounded-md duration-300 font-semibold w-fit">COMFIRM
+                            ORDER</button>
                     </div>
                 </div>
                 <!-- payment by cash -->
 
             </div>
 
-            <div
-                class="w-full lg:w-2/5 xl:w-1/3 flex flex-col space-y-5 mx-auto rounded-lg">
+            <div class="w-full lg:w-2/5 xl:w-1/3 flex flex-col space-y-5 mx-auto rounded-lg">
 
                 <div class="w-full bg-black/20 px-5 py-3 rounded">
                     <p class="font-semibold">Your Order</p>
                 </div>
 
                 <div class="flex flex-col space-y-4 border border-gray-300 p-5 rounded">
-   
+
                     <h2 class="text-lg font-medium border-b border-gray-300 pb-3">OUR STORE</h2>
 
                     <div class="flex flex-col space-y-5 border-b border-gray-300 pb-3">
-                      
-                        <div class="flex justify-between">
-                            <div class="flex space-x-5">
-                                <div class="flex flex-col space-y-1">
-                                    <p class="text-base font-medium">Beigh Knitted Shoes</p>
-                                    <p class="text-sm">Size: M</p>
-                                </div>
-                                <p class="font-medium text-base">x1</p>
-                            </div>
-                            <p class="font-medium">$84.00</p>
-                        </div>
-
-                        
-                        <div class="flex justify-between">
-                            <div class="flex space-x-5">
-                                <div class="flex flex-col space-y-1">
-                                    <p class="text-base font-medium">Beigh Knitted Shoes</p>
-                                    <p class="text-sm">Size: M</p>
-                                </div>
-                                <p class="font-medium text-base">x1</p>
-                            </div>
-                            <p class="font-medium">$84.00</p>
-                        </div>
 
                         <div class="flex justify-between">
                             <div class="flex space-x-5">
@@ -2460,7 +2614,30 @@ of<br class="hidden sm:block"> your most frequently asked questions to help you 
                             </div>
                             <p class="font-medium">$84.00</p>
                         </div>
-                        
+
+
+                        <div class="flex justify-between">
+                            <div class="flex space-x-5">
+                                <div class="flex flex-col space-y-1">
+                                    <p class="text-base font-medium">Beigh Knitted Shoes</p>
+                                    <p class="text-sm">Size: M</p>
+                                </div>
+                                <p class="font-medium text-base">x1</p>
+                            </div>
+                            <p class="font-medium">$84.00</p>
+                        </div>
+
+                        <div class="flex justify-between">
+                            <div class="flex space-x-5">
+                                <div class="flex flex-col space-y-1">
+                                    <p class="text-base font-medium">Beigh Knitted Shoes</p>
+                                    <p class="text-sm">Size: M</p>
+                                </div>
+                                <p class="font-medium text-base">x1</p>
+                            </div>
+                            <p class="font-medium">$84.00</p>
+                        </div>
+
                         <div class="flex justify-between font-medium">
                             <p>SUBTOTAL</p>
                             <p>$84.00</p>
@@ -2482,13 +2659,16 @@ of<br class="hidden sm:block"> your most frequently asked questions to help you 
                     </div>
 
                     <div class="flex space-x-3 items-center">
-                        <input type="checkbox" id="agr" class="text-primary border-2 rounded border-primary focus:border-primary focus:ring-0 mt-1">
-                        <label for="agr">Agree to our <span class="text-primary cursor-pointer">terms & conditions</span></label>
+                        <input type="checkbox" id="agr"
+                            class="text-primary border-2 rounded border-primary focus:border-primary focus:ring-0 mt-1">
+                        <label for="agr">Agree to our <span class="text-primary cursor-pointer">terms &
+                                conditions</span></label>
                     </div>
 
                     <button
-                        class="bg-primary px-4 py-2 border border-primary hover:bg-transparent text-white hover:text-primary rounded-md duration-300 font-semibold w-full">PLACE ORDER</button>
-                    
+                        class="bg-primary px-4 py-2 border border-primary hover:bg-transparent text-white hover:text-primary rounded-md duration-300 font-semibold w-full">PLACE
+                        ORDER</button>
+
                 </div>
             </div>
         </div>
@@ -2498,62 +2678,86 @@ of<br class="hidden sm:block"> your most frequently asked questions to help you 
 
     <!-- Order complete section start -->
     <section class="hidden" id="order-complete-page">
-            <div class="w-full lg:px-7 px-3 xs:px-10 sm:px-16 xl:px-20 mt-5">
-    
-                <div class="flex text-primary items-center space-x-2 mb-5">
-                    <i class="cursor-pointer fa-solid fa-house text-sm" onclick="changePage('home-page')"></i>
-                    <i class="cursor-pointer fa-solid fa-chevron-right text-xs"></i>
-                    <p class="cursor-pointer text-black">Order complete</p>
-                </div>
-    
-                <div class="mx-auto text-center flex flex-col space-y-5 items-center">
-                    <img src="img/complete.png">
-                    <p class="text-xl sm:text-2xl font-semibold">YOUR ORDER IS COMPLETED!</p>
-                    <p class="px-10 md:px-16 lg:px-28">Thank you for your order! Your order is being processed and will be completed within 3-6 hours. You will receive an email confirmation when your order is completed.</p>
-                    <Button
-                            class="bg-primary px-4 py-2 border border-primary hover:bg-transparent text-white hover:text-primary rounded-md duration-300 font-semibold uppercase">Continue shopping</Button>
-                </div>
+        <div class="w-full lg:px-7 px-3 xs:px-10 sm:px-16 xl:px-20 mt-5">
+
+            <div class="flex text-primary items-center space-x-2 mb-5">
+                <i class="cursor-pointer fa-solid fa-house text-sm" onclick="changePage('home-page')"></i>
+                <i class="cursor-pointer fa-solid fa-chevron-right text-xs"></i>
+                <p class="cursor-pointer text-black">Order complete</p>
             </div>
+
+            <div class="mx-auto text-center flex flex-col space-y-5 items-center">
+                <img src="img/complete.png">
+                <p class="text-xl sm:text-2xl font-semibold">YOUR ORDER IS COMPLETED!</p>
+                <p class="px-10 md:px-16 lg:px-28">Thank you for your order! Your order is being processed and will be
+                    completed within 3-6 hours. You will receive an email confirmation when your order is completed.</p>
+                <Button
+                    class="bg-primary px-4 py-2 border border-primary hover:bg-transparent text-white hover:text-primary rounded-md duration-300 font-semibold uppercase">Continue
+                    shopping</Button>
+            </div>
+        </div>
     </section>
     <!-- Order complete section end -->
 
 
     <!-- Terms & Conditions section start -->
     <section class="hidden" id="terms-conditions-page">
-            <div class="w-full lg:px-7 px-3 xs:px-10 sm:px-16 xl:px-20 mt-5">
-    
-                <div class="flex text-primary items-center space-x-2 mb-5">
-                    <i class="cursor-pointer fa-solid fa-house text-sm" onclick="changePage('home-page')"></i>
-                    <i class="cursor-pointer fa-solid fa-chevron-right text-xs"></i>
-                    <p class="cursor-pointer text-black">Terms & Conditions</p>
-                </div>
+        <div class="w-full lg:px-7 px-3 xs:px-10 sm:px-16 xl:px-20 mt-5">
 
-                <div class="text-[17px] flex flex-col space-y-2 lg:px-12">
-                    <p class="text-xl sm:text-3xl mx-auto font-semibold py-3">Terms & Conditions</p>
-                    <p class="text-[#464545]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus aliquam architecto blanditiis commodi cumque deleniti eaque earum eius esse, eum exercitationem iusto, modi molestiae mollitia nisi quam quasi quia quis quod rem reprehenderit sed sit totam veritatis. Ab atque dicta earum excepturi facere fuga illum incidunt, iste labore magnam neque repellat vero voluptates. At consectetur corporis deleniti error ipsum.</p>
-
-                    <p class="text-[#464545]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus aliquam architecto blanditiis commodi cumque deleniti eaque earum eius esse, eum exercitationem iusto, modi molestiae mollitia nisi quam quasi quia quis quod rem reprehenderit sed sit totam veritatis.</p>
-
-                    <p class="font-semibold pt-5">Prohibitions</p>
-
-                    <p class="text-[#464545]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam ea illo minus perspiciatis quia ratione. Eum harum nobis possimus quo voluptate. A accusamus alias architecto blanditiis cupiditate debitis deserunt dolorum earum eligendi error esse eum fuga fugiat ipsa magni maxime neque nesciunt, nihil nostrum, possimus quaerat quas quibusdam quisquam quos repellat tenetur ut! Deleniti id, inventore ipsa modi nesciunt officiis repellendus! Harum labore officiis ratione totam velit? Consequatur, dolor libero.</p>
-
-                    <p class="font-semibold pt-5">Terms of Sale</p>
-                    <p class="text-[#464545]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam ea illo minus perspiciatis quia ratione. Eum harum nobis possimus quo voluptate. A accusamus alias architecto blanditiis cupiditate debitis deserunt dolorum earum eligendi error esse eum fuga fugiat ipsa magni maxime neque nesciunt, nihil nostrum, possimus quaerat quas quibusdam quisquam quos repellat tenetur ut! Deleniti id, inventore ipsa modi nesciunt officiis repellendus! Harum labore officiis ratione totam velit? Consequatur, dolor libero.</p>
-
-                    <p class="font-semibold pt-5">Disclaimer of Liability</p>
-
-                    <p class="text-[#464545]">A accusamus alias architecto blanditiis cupiditate debitis deserunt dolorum earum eligendi error esse eum fuga fugiat ipsa magni maxime neque nesciunt, nihil nostrum, possimus quaerat quas quibusdam quisquam quos repellat tenetur ut! Deleniti id, inventore ipsa modi nesciunt officiis repellendus! Harum labore officiis ratione totam velit? Consequatur, dolor libero.</p>
-
-                    <p class="font-semibold pt-5">Complaints</p>
-
-                    <p class="text-[#464545]">Eum harum nobis possimus quo voluptate. A accusamus alias architecto blanditiis cupiditate debitis deserunt dolorum earum eligendi error esse eum fuga fugiat ipsa magni maxime neque nesciunt.</p>
-
-                    <p class="font-semibold pt-5">Entire Agreement</p>
-
-                    <p class="text-[#464545]">Harum nobis possimus quo voluptate. A accusamus alias architecto blanditiis cupiditate debitis deserunt dolorum earum eligendi error esse eum fuga fugiat.</p>
-                </div>
+            <div class="flex text-primary items-center space-x-2 mb-5">
+                <i class="cursor-pointer fa-solid fa-house text-sm" onclick="changePage('home-page')"></i>
+                <i class="cursor-pointer fa-solid fa-chevron-right text-xs"></i>
+                <p class="cursor-pointer text-black">Terms & Conditions</p>
             </div>
+
+            <div class="text-[17px] flex flex-col space-y-2 lg:px-12">
+                <p class="text-xl sm:text-3xl mx-auto font-semibold py-3">Terms & Conditions</p>
+                <p class="text-[#464545]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus aliquam
+                    architecto blanditiis commodi cumque deleniti eaque earum eius esse, eum exercitationem iusto, modi
+                    molestiae mollitia nisi quam quasi quia quis quod rem reprehenderit sed sit totam veritatis. Ab
+                    atque dicta earum excepturi facere fuga illum incidunt, iste labore magnam neque repellat vero
+                    voluptates. At consectetur corporis deleniti error ipsum.</p>
+
+                <p class="text-[#464545]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus aliquam
+                    architecto blanditiis commodi cumque deleniti eaque earum eius esse, eum exercitationem iusto, modi
+                    molestiae mollitia nisi quam quasi quia quis quod rem reprehenderit sed sit totam veritatis.</p>
+
+                <p class="font-semibold pt-5">Prohibitions</p>
+
+                <p class="text-[#464545]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam ea illo
+                    minus perspiciatis quia ratione. Eum harum nobis possimus quo voluptate. A accusamus alias
+                    architecto blanditiis cupiditate debitis deserunt dolorum earum eligendi error esse eum fuga fugiat
+                    ipsa magni maxime neque nesciunt, nihil nostrum, possimus quaerat quas quibusdam quisquam quos
+                    repellat tenetur ut! Deleniti id, inventore ipsa modi nesciunt officiis repellendus! Harum labore
+                    officiis ratione totam velit? Consequatur, dolor libero.</p>
+
+                <p class="font-semibold pt-5">Terms of Sale</p>
+                <p class="text-[#464545]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam ea illo
+                    minus perspiciatis quia ratione. Eum harum nobis possimus quo voluptate. A accusamus alias
+                    architecto blanditiis cupiditate debitis deserunt dolorum earum eligendi error esse eum fuga fugiat
+                    ipsa magni maxime neque nesciunt, nihil nostrum, possimus quaerat quas quibusdam quisquam quos
+                    repellat tenetur ut! Deleniti id, inventore ipsa modi nesciunt officiis repellendus! Harum labore
+                    officiis ratione totam velit? Consequatur, dolor libero.</p>
+
+                <p class="font-semibold pt-5">Disclaimer of Liability</p>
+
+                <p class="text-[#464545]">A accusamus alias architecto blanditiis cupiditate debitis deserunt dolorum
+                    earum eligendi error esse eum fuga fugiat ipsa magni maxime neque nesciunt, nihil nostrum, possimus
+                    quaerat quas quibusdam quisquam quos repellat tenetur ut! Deleniti id, inventore ipsa modi nesciunt
+                    officiis repellendus! Harum labore officiis ratione totam velit? Consequatur, dolor libero.</p>
+
+                <p class="font-semibold pt-5">Complaints</p>
+
+                <p class="text-[#464545]">Eum harum nobis possimus quo voluptate. A accusamus alias architecto
+                    blanditiis cupiditate debitis deserunt dolorum earum eligendi error esse eum fuga fugiat ipsa magni
+                    maxime neque nesciunt.</p>
+
+                <p class="font-semibold pt-5">Entire Agreement</p>
+
+                <p class="text-[#464545]">Harum nobis possimus quo voluptate. A accusamus alias architecto blanditiis
+                    cupiditate debitis deserunt dolorum earum eligendi error esse eum fuga fugiat.</p>
+            </div>
+        </div>
     </section>
     <!-- Terms & Conditions section end -->
 
@@ -2570,28 +2774,50 @@ of<br class="hidden sm:block"> your most frequently asked questions to help you 
 
             <div class="text-[17px] flex flex-col space-y-2 lg:px-12">
                 <p class="text-xl sm:text-3xl mx-auto font-semibold py-3">Privacy Policy</p>
-                <p class="text-[#464545]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus aliquam architecto blanditiis commodi cumque deleniti eaque earum eius esse, eum exercitationem iusto, modi molestiae mollitia nisi quam quasi quia quis quod rem reprehenderit sed sit totam veritatis. Ab atque dicta earum excepturi facere fuga illum incidunt, iste labore magnam neque repellat vero voluptates. At consectetur corporis deleniti error ipsum.</p>
+                <p class="text-[#464545]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus aliquam
+                    architecto blanditiis commodi cumque deleniti eaque earum eius esse, eum exercitationem iusto, modi
+                    molestiae mollitia nisi quam quasi quia quis quod rem reprehenderit sed sit totam veritatis. Ab
+                    atque dicta earum excepturi facere fuga illum incidunt, iste labore magnam neque repellat vero
+                    voluptates. At consectetur corporis deleniti error ipsum.</p>
 
-                <p class="text-[#464545]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus aliquam architecto blanditiis commodi cumque deleniti eaque earum eius esse, eum exercitationem iusto, modi molestiae mollitia nisi quam quasi quia quis quod rem reprehenderit sed sit totam veritatis.</p>
+                <p class="text-[#464545]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus aliquam
+                    architecto blanditiis commodi cumque deleniti eaque earum eius esse, eum exercitationem iusto, modi
+                    molestiae mollitia nisi quam quasi quia quis quod rem reprehenderit sed sit totam veritatis.</p>
 
                 <p class="font-semibold pt-5">Prohibitions</p>
 
-                <p class="text-[#464545]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam ea illo minus perspiciatis quia ratione. Eum harum nobis possimus quo voluptate. A accusamus alias architecto blanditiis cupiditate debitis deserunt dolorum earum eligendi error esse eum fuga fugiat ipsa magni maxime neque nesciunt, nihil nostrum, possimus quaerat quas quibusdam quisquam quos repellat tenetur ut! Deleniti id, inventore ipsa modi nesciunt officiis repellendus! Harum labore officiis ratione totam velit? Consequatur, dolor libero.</p>
+                <p class="text-[#464545]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam ea illo
+                    minus perspiciatis quia ratione. Eum harum nobis possimus quo voluptate. A accusamus alias
+                    architecto blanditiis cupiditate debitis deserunt dolorum earum eligendi error esse eum fuga fugiat
+                    ipsa magni maxime neque nesciunt, nihil nostrum, possimus quaerat quas quibusdam quisquam quos
+                    repellat tenetur ut! Deleniti id, inventore ipsa modi nesciunt officiis repellendus! Harum labore
+                    officiis ratione totam velit? Consequatur, dolor libero.</p>
 
                 <p class="font-semibold pt-5">Terms of Sale</p>
-                <p class="text-[#464545]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam ea illo minus perspiciatis quia ratione. Eum harum nobis possimus quo voluptate. A accusamus alias architecto blanditiis cupiditate debitis deserunt dolorum earum eligendi error esse eum fuga fugiat ipsa magni maxime neque nesciunt, nihil nostrum, possimus quaerat quas quibusdam quisquam quos repellat tenetur ut! Deleniti id, inventore ipsa modi nesciunt officiis repellendus! Harum labore officiis ratione totam velit? Consequatur, dolor libero.</p>
+                <p class="text-[#464545]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam ea illo
+                    minus perspiciatis quia ratione. Eum harum nobis possimus quo voluptate. A accusamus alias
+                    architecto blanditiis cupiditate debitis deserunt dolorum earum eligendi error esse eum fuga fugiat
+                    ipsa magni maxime neque nesciunt, nihil nostrum, possimus quaerat quas quibusdam quisquam quos
+                    repellat tenetur ut! Deleniti id, inventore ipsa modi nesciunt officiis repellendus! Harum labore
+                    officiis ratione totam velit? Consequatur, dolor libero.</p>
 
                 <p class="font-semibold pt-5">Disclaimer of Liability</p>
 
-                <p class="text-[#464545]">A accusamus alias architecto blanditiis cupiditate debitis deserunt dolorum earum eligendi error esse eum fuga fugiat ipsa magni maxime neque nesciunt, nihil nostrum, possimus quaerat quas quibusdam quisquam quos repellat tenetur ut! Deleniti id, inventore ipsa modi nesciunt officiis repellendus! Harum labore officiis ratione totam velit? Consequatur, dolor libero.</p>
+                <p class="text-[#464545]">A accusamus alias architecto blanditiis cupiditate debitis deserunt dolorum
+                    earum eligendi error esse eum fuga fugiat ipsa magni maxime neque nesciunt, nihil nostrum, possimus
+                    quaerat quas quibusdam quisquam quos repellat tenetur ut! Deleniti id, inventore ipsa modi nesciunt
+                    officiis repellendus! Harum labore officiis ratione totam velit? Consequatur, dolor libero.</p>
 
                 <p class="font-semibold pt-5">Complaints</p>
 
-                <p class="text-[#464545]">Eum harum nobis possimus quo voluptate. A accusamus alias architecto blanditiis cupiditate debitis deserunt dolorum earum eligendi error esse eum fuga fugiat ipsa magni maxime neque nesciunt.</p>
+                <p class="text-[#464545]">Eum harum nobis possimus quo voluptate. A accusamus alias architecto
+                    blanditiis cupiditate debitis deserunt dolorum earum eligendi error esse eum fuga fugiat ipsa magni
+                    maxime neque nesciunt.</p>
 
                 <p class="font-semibold pt-5">Entire Agreement</p>
 
-                <p class="text-[#464545]">Harum nobis possimus quo voluptate. A accusamus alias architecto blanditiis cupiditate debitis deserunt dolorum earum eligendi error esse eum fuga fugiat.</p>
+                <p class="text-[#464545]">Harum nobis possimus quo voluptate. A accusamus alias architecto blanditiis
+                    cupiditate debitis deserunt dolorum earum eligendi error esse eum fuga fugiat.</p>
             </div>
         </div>
     </section>
@@ -2616,9 +2842,9 @@ of<br class="hidden sm:block"> your most frequently asked questions to help you 
 
             <div class="flex  flex-col space-y-5 lg:space-y-0 lg:flex-row lg:space-x-5 relative">
 
- 
+
                 <div class="absolute -top-[1000px] left-0 lg:hidden flex flex-col space-y-5 bg-white shadow-md w-[300px] p-5 account-page-button-section duration-500 opacity-0 z-20 hidden"
-                id="account-page-all-btn-parent-2">
+                    id="account-page-all-btn-parent-2">
                 </div>
                 <!-- left side -->
 
@@ -3319,7 +3545,8 @@ of<br class="hidden sm:block"> your most frequently asked questions to help you 
                             <div
                                 class="absolute bottom-0 right-0 xl:top-auto xl:bottom-auto flex space-x-5 p-5 xl:py-1 pl-0">
                                 <button
-                                    class="font-semibold text-primary bg-transparent hover:text-white hover:bg-primary duration-300 rounded px-5 py-2 w-fit border border-primary" onclick="changeAccountPageSection('edit-payment-method-section',undefined,'Edit Payment Method')">Edit
+                                    class="font-semibold text-primary bg-transparent hover:text-white hover:bg-primary duration-300 rounded px-5 py-2 w-fit border border-primary"
+                                    onclick="changeAccountPageSection('edit-payment-method-section',undefined,'Edit Payment Method')">Edit
                                 </button>
                                 <button
                                     class="font-semibold text-primary bg-transparent hover:text-white hover:bg-primary duration-300 rounded px-5 py-2 w-fit border border-primary">Delete
@@ -3362,7 +3589,8 @@ of<br class="hidden sm:block"> your most frequently asked questions to help you 
                             <div
                                 class="absolute bottom-0 right-0 xl:top-auto xl:bottom-auto flex space-x-5 p-5 xl:py-1 pl-0">
                                 <button
-                                    class="font-semibold text-primary bg-transparent hover:text-white hover:bg-primary duration-300 rounded px-5 py-2 w-fit border border-primary" onclick="changeAccountPageSection('edit-payment-method-section',undefined,'Edit Payment Method')">Edit
+                                    class="font-semibold text-primary bg-transparent hover:text-white hover:bg-primary duration-300 rounded px-5 py-2 w-fit border border-primary"
+                                    onclick="changeAccountPageSection('edit-payment-method-section',undefined,'Edit Payment Method')">Edit
                                 </button>
                                 <button
                                     class="font-semibold text-primary bg-transparent hover:text-white hover:bg-primary duration-300 rounded px-5 py-2 w-fit border border-primary">Delete
@@ -3417,7 +3645,8 @@ of<br class="hidden sm:block"> your most frequently asked questions to help you 
                         </div>
 
                         <div class="flex space-x-2 items-center">
-                            <input type="checkbox" class="text-primary focus:ring-0 rounded border-primary border-2" id="saveAsDefault">
+                            <input type="checkbox" class="text-primary focus:ring-0 rounded border-primary border-2"
+                                id="saveAsDefault">
                             <label class="text-base font-medium" for="saveAsDefault">Save as defalut</label>
                         </div>
 
@@ -3435,14 +3664,17 @@ of<br class="hidden sm:block"> your most frequently asked questions to help you 
                 <section id="my-wishlist-section" class="w-full lg:w-[73%] xl:w-3/4 max-h-[800px] overflow-auto hidden">
                     <div class="flex flex-col space-y-5 mb-5">
 
-                        <div class="flex md:items-center md:space-x-5 flex-col md:flex-row items-start space-x-0 space-y-5 md:space-y-0 px-5 py-8 border border-gray-300 rounded">
-                             <div class="w-20">
+                        <div
+                            class="flex md:items-center md:space-x-5 flex-col md:flex-row items-start space-x-0 space-y-5 md:space-y-0 px-5 py-8 border border-gray-300 rounded">
+                            <div class="w-20">
                                 <img src="img/keyboard.png" class="w-full">
                             </div>
 
-                            <div class="w-full md:w-2/3 flex flex-col md:flex-row justify-between md:items-center md:space-x-5 space-x-0 space-y-2 md:space-y-0">
+                            <div
+                                class="w-full md:w-2/3 flex flex-col md:flex-row justify-between md:items-center md:space-x-5 space-x-0 space-y-2 md:space-y-0">
                                 <div class="flex flex-col space-y-1">
-                                    <p class="text-base md:text-lg font-medium">HV-KB585GCM WIRELESS KEYBOARD & MOUSE</p>
+                                    <p class="text-base md:text-lg font-medium">HV-KB585GCM WIRELESS KEYBOARD & MOUSE
+                                    </p>
                                     <h2 class="text-base">Availability: <a class="text-primary">Out of Stock</a></h2>
                                 </div>
 
@@ -3455,25 +3687,27 @@ of<br class="hidden sm:block"> your most frequently asked questions to help you 
 
                             <div class="w-full md:w-fit flex justify-between md:space-x-5 items-center">
                                 <div
-                                class="flex justify-center items-center space-x-1 text-white w-32 font-semibold text-sm md:text-base rounded-md bg-primary border border-primary text-center p-1.5 h-fit cursor-not-allowed">
-                                <i class="fa-solid fa-cart-shopping text-xs mt-1 cursor-not-allowed"></i>
-                                <button class="cursor-not-allowed">Add To Cart</button>
+                                    class="flex justify-center items-center space-x-1 text-white w-32 font-semibold text-sm md:text-base rounded-md bg-primary border border-primary text-center p-1.5 h-fit cursor-not-allowed">
+                                    <i class="fa-solid fa-cart-shopping text-xs mt-1 cursor-not-allowed"></i>
+                                    <button class="cursor-not-allowed">Add To Cart</button>
+                                </div>
+                                <i class="fa-solid fa-trash hover:text-primary text-base cursor-pointer delete"></i>
                             </div>
-                                    <i class="fa-solid fa-trash hover:text-primary text-base cursor-pointer delete"></i>
-                            </div>  
                         </div>
 
-                        <div class="flex md:items-center md:space-x-5 flex-col md:flex-row items-start space-x-0 space-y-5 md:space-y-0 px-5 py-8 border border-gray-300 rounded">
+                        <div
+                            class="flex md:items-center md:space-x-5 flex-col md:flex-row items-start space-x-0 space-y-5 md:space-y-0 px-5 py-8 border border-gray-300 rounded">
                             <div class="w-20">
                                 <img src="img/bag.png" class="w-full">
                             </div>
-                            
-                            <div class="w-full md:w-2/3 flex flex-col md:flex-row justify-between md:items-center md:space-x-5 space-x-0 space-y-2 md:space-y-0">
+
+                            <div
+                                class="w-full md:w-2/3 flex flex-col md:flex-row justify-between md:items-center md:space-x-5 space-x-0 space-y-2 md:space-y-0">
                                 <div class="flex flex-col space-y-1">
                                     <p class="text-base md:text-lg font-medium">CASUAL USB CHARGING LAPTOP BACKPACKS</p>
                                     <h2 class="text-base">Availability: <a class="text-primary">In Stock</a></h2>
                                 </div>
-                            
+
                                 <div>
                                     <span class="text-primary font-bold text-lg">
                                         $<span>45.00</span>
@@ -3482,12 +3716,12 @@ of<br class="hidden sm:block"> your most frequently asked questions to help you 
                             </div>
                             <div class="w-full md:w-fit">
                                 <div class="w-full md:w-fit flex justify-between md:space-x-5 items-center">
-                                        <div
-                                            class="flex justify-center items-center space-x-1 text-white hover:text-primary w-32 font-semibold text-sm md:text-base rounded-md bg-primary border border-primary hover:bg-transparent text-center p-1.5 duration-300 cursor-pointer h-fit" onclick="addToCartAndWishlistBtnHandle(this)">
-                                            <i class="fa-solid fa-cart-shopping text-xs mt-1"></i>
-                                            <button>Add To Cart</button>
-                                        </div> 
-                                        <i class="fa-solid fa-trash hover:text-primary text-base cursor-pointer delete"></i>
+                                    <div class="flex justify-center items-center space-x-1 text-white hover:text-primary w-32 font-semibold text-sm md:text-base rounded-md bg-primary border border-primary hover:bg-transparent text-center p-1.5 duration-300 cursor-pointer h-fit"
+                                        onclick="addToCartAndWishlistBtnHandle(this)">
+                                        <i class="fa-solid fa-cart-shopping text-xs mt-1"></i>
+                                        <button>Add To Cart</button>
+                                    </div>
+                                    <i class="fa-solid fa-trash hover:text-primary text-base cursor-pointer delete"></i>
                                 </div>
                             </div>
                         </div>
@@ -3500,7 +3734,7 @@ of<br class="hidden sm:block"> your most frequently asked questions to help you 
 
                 </section>
                 <!-- my wishlist section -->
-                
+
                 <!-- right side-->
 
             </div>
@@ -3513,7 +3747,8 @@ of<br class="hidden sm:block"> your most frequently asked questions to help you 
 
 
     <!-- anumation section start -->
-    <div id="animationSection" class="absolute top-0 left-0 w-full h-[99999px] bg-slate-900 duration-1000 hidden z-50" onclick="animation()"></div>
+    <div id="animationSection" class="absolute top-0 left-0 w-full h-[99999px] bg-slate-900 duration-1000 hidden z-50"
+        onclick="animation()"></div>
     <!-- anumation section end -->
 
 
@@ -3545,19 +3780,27 @@ of<br class="hidden sm:block"> your most frequently asked questions to help you 
 
                 <div class="flex flex-col space-y-3">
                     <h2 class="text-lg font-medium">MY ACCOUNT</h2>
-                    <p onclick="changePageAndSection('my-account-page','my-order-history-section','btn-5','Order History')" class="cursor-pointer duration-200 hover:text-primary">Orders</p>
-                    <p onclick="changePageAndSection('my-account-page','my-wishlist-section','btn-11','Wishlist')" class="cursor-pointer duration-200 hover:text-primary">Wishlist</p>
-                    <p onclick="changePage('track-order-page')" class="cursor-pointer duration-200 hover:text-primary">Track Order</p>
-                    <p onclick="changePageAndSection('my-account-page','my-account-section','btn-1','Manage My Account')" class="cursor-pointer duration-200 hover:text-primary">Manage Account</p>
-                    <p onclick="changePageAndSection('my-account-page','my-return-history-section','btn-6','Return Order')" class="cursor-pointer duration-200 hover:text-primary">Return Order</p>
+                    <p onclick="changePageAndSection('my-account-page','my-order-history-section','btn-5','Order History')"
+                        class="cursor-pointer duration-200 hover:text-primary">Orders</p>
+                    <p onclick="changePageAndSection('my-account-page','my-wishlist-section','btn-11','Wishlist')"
+                        class="cursor-pointer duration-200 hover:text-primary">Wishlist</p>
+                    <p onclick="changePage('track-order-page')" class="cursor-pointer duration-200 hover:text-primary">
+                        Track Order</p>
+                    <p onclick="changePageAndSection('my-account-page','my-account-section','btn-1','Manage My Account')"
+                        class="cursor-pointer duration-200 hover:text-primary">Manage Account</p>
+                    <p onclick="changePageAndSection('my-account-page','my-return-history-section','btn-6','Return Order')"
+                        class="cursor-pointer duration-200 hover:text-primary">Return Order</p>
                 </div>
 
                 <div class="flex flex-col space-y-3">
                     <h2 class="text-lg font-medium">INFORMATION</h2>
-                    <p  onclick="changePage('about-us-page')" class="cursor-pointer duration-200 hover:text-primary">About Us</p>
+                    <p onclick="changePage('about-us-page')" class="cursor-pointer duration-200 hover:text-primary">
+                        About Us</p>
                     <p class="cursor-pointer duration-200 hover:text-primary">Return Policy</p>
-                    <p onclick="changePage('terms-conditions-page')" class="cursor-pointer duration-200 hover:text-primary">Terms & condition</p>
-                    <p onclick="changePage('privacy-policy-page')" class="cursor-pointer duration-200 hover:text-primary">Privacy Policy</p>
+                    <p onclick="changePage('terms-conditions-page')"
+                        class="cursor-pointer duration-200 hover:text-primary">Terms & condition</p>
+                    <p onclick="changePage('privacy-policy-page')"
+                        class="cursor-pointer duration-200 hover:text-primary">Privacy Policy</p>
                     <p onclick="changePage('faq-page')" class="cursor-pointer duration-200 hover:text-primary">FAQ </p>
                 </div>
             </div>
