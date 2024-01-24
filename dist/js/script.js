@@ -650,6 +650,7 @@ function showSideBar(id) {
     const sideBar = document.getElementById(id);
     if (id === 'searchBar') {
         sideBar.classList.remove('-top-[9999px]');
+        sideBar.style.transition = '1s';
         sideBar.classList.add('top-0');
         opendSideBar = id;
     } else {
